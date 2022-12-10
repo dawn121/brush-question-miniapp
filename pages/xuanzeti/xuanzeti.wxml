@@ -1,0 +1,73 @@
+<view>
+    <view class="left_right_gap" style="background-color: rgb(254, 254, 254);">
+        <scroll-view scroll-y="true" style="height: 45rem;">
+            <view class="flex_only">
+                <view class="progress_left" style="width: {{progress_left}}rem;"></view>
+                <view class="progress_right" style="width: {{100-progress_left}}rem;"></view>
+                <view style="font-size: smaller;">{{currenttimu+1}}/10</view>
+            </view>
+            <view class="gap"></view>
+            <view class="gap"></view>
+            <view class="title">{{list[currenttimu].title}}
+            </view>
+            <view class="{{bukexuanzhong==true?'bukexuanzhong':''}}">
+                <view class="{{selection1}}" bindtap="click_selection1">
+                    <view class="abcd">A</view>
+                    <view class="option">{{list[currenttimu].options[0]}}</view>
+                </view>
+                <view class="gap"></view>
+                <view class="{{selection2}}" bindtap="click_selection2">
+                    <view class="abcd">B</view>
+                    <view class="option">{{list[currenttimu].options[1]}}</view>
+                </view>
+                <view class="gap"></view>
+                <view class="{{selection3}}" bindtap="click_selection3">
+                    <view class="abcd">C</view>
+                    <view class="option">{{list[currenttimu].options[2]}}</view>
+                </view>
+                <view class="gap"></view>
+                <view class="{{selection4}}" bindtap="click_selection4">
+                    <view class="abcd">D</view>
+                    <view class="option">{{list[currenttimu].options[3]}}</view>
+                </view>
+                <view class="gap"></view>
+            </view>
+            <view hidden="{{kanjiexi}}" style="background-color: rgb(241, 241, 241);height: 0.5rem;"></view>
+            <view class="flex_only" style="margin-top: 0.5rem;" hidden="{{buttonofnext}}">
+
+                <view class="daanfankui">你的答案：</view>
+                <view hidden="{{zuoduile}}">
+                    <view style="margin-left: 1rem;margin-right: 5rem;font-size: large;color: rgb(255, 64, 64);font-weight: 600;">{{youranswer}}</view>
+                </view>
+                <view hidden="{{!zuoduile}}">
+                    <view style="margin-left: 1rem;margin-right: 5rem;font-size: large;color: rgb(57, 228, 80);font-weight: 600;">{{youranswer}}</view>
+                </view>
+                <view class="daanfankui">正确答案：</view>
+                <view style="margin-left: 1rem;font-size: large;color: rgb(57, 228, 80);font-weight: 600;">{{correctanswer}}</view>
+            </view>
+            <view class="jiexi" hidden="{{kanjiexi}}">
+                <view class="flex_only" style="margin-bottom: 0.5rem;">
+                    <view style="height: 1rem;width: 0.3rem;background-color: rgb(123, 123, 248);margin-top: 0.3rem;margin-right: 0.5rem;"></view>
+                    <view style="font-size:large;font-weight: bolder;">答案解析</view>
+                </view>
+                {{list[currenttimu].jiexi}}
+            </view>
+        </scroll-view>
+    </view>
+    <view>
+        <view hidden="{{end}}" style="margin-top: 0.8rem;">
+            <button style="border-color: rgb(123, 123, 248);background-color:rgb(123, 123, 248) ;color: white;width: 60%;border-radius: 10rem;" bindtap="wancheng">完成</button>
+        </view>
+        <view hidden="{{buttonofsubmit}}" style="margin-top: 0.8rem;">
+            <view hidden="{{!isselect}}">
+                <button bindtap="lijitijiao" disabled="{{!isselect}}" style="border-color: rgb(123, 123, 248);background-color:rgb(123, 123, 248) ;color: white;width: 60%;border-radius: 10rem;">立即提交</button>
+            </view>
+            <view hidden="{{isselect}}">
+                <button bindtap="lijitijiao" disabled="{{!isselect}}" style="border-color: rgb(226, 226, 226);background-color:rgb(226, 226, 226) ;color: white;width: 60%;border-radius: 10rem;">立即提交</button>
+            </view>
+        </view>
+        <view hidden="{{buttonofnext}}" style="margin-top: 0.8rem;">
+            <button style="border-color: rgb(123, 123, 248);background-color:rgb(123, 123, 248) ;color: white;width: 60%;border-radius: 10rem;" bindtap="xiayiti">下一题</button>
+        </view>
+    </view>
+</view>

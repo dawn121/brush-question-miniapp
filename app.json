@@ -1,0 +1,61 @@
+{
+    "pages": [
+        "pages/zhengzhi/zhengzhi",
+        "pages/bianzhengfa/bianzhengfa",
+        "pages/dazuowen/dazuowen",
+        "pages/jiugongge/jiugongge",
+        "pages/introductorytheory/introductorytheory",
+        "pages/beisongxindao/beisongxindao",
+        
+        
+        "pages/answersheet/answersheet",
+        "pages/experiment/experiment",
+        "pages/statistics/statistics",
+        "pages/my/my",
+        "pages/xuanzeti/xuanzeti",
+        "pages/yunhanshu/yunhanshu",
+        "pages/command/command",
+        "pages/demo2/demo2",
+        "pages/shujuku/shujuku",
+        "pages/index/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "Weixin",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/introductorytheory/introductorytheory",
+                "text": "导论",
+                "iconPath": "lib/img/introductorytheory_uncheck.png",
+                "selectedIconPath": "lib/img/introductorytheory_check.png",
+                "selectedColor": "rgb(123, 123, 248)"
+            },
+            {
+                "pagePath": "pages/experiment/experiment",
+                "text": "实验",
+                "iconPath": "lib/img/experiment_uncheck.png",
+                "selectedIconPath": "lib/img/experiment_check.png",
+                "selectedColor": "rgb(123, 123, 248)"
+            },
+            {
+                "pagePath": "pages/statistics/statistics",
+                "text": "统计",
+                "iconPath": "lib/img/statistics_uncheck.png",
+                "selectedIconPath": "lib/img/statistics_check.png",
+                "selectedColor": "rgb(123, 123, 248)"
+            },
+            {
+                "pagePath": "pages/zhengzhi/zhengzhi",
+                "text": "我的",
+                "iconPath": "lib/img/my_uncheck.png",
+                "selectedIconPath": "lib/img/my_check.png",
+                "selectedColor": "rgb(123, 123, 248)"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json"
+}

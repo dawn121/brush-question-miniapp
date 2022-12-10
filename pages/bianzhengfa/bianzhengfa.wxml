@@ -1,0 +1,603 @@
+<!--
+    用 text文本的space="emsp"，实现残词补全 （X） 实际开发一个空格大小不等于一个中文字符大小，采用opacity的方法才可以实现残词补齐且不抖动
+    格式：
+    <text style="color: red; opacity: {{xianshi}};"></text>
+    <view hidden="{{di}}" class="whiteblock">
+        <view class="headline"></view>
+            <view class="left_right_gap">
+                <text class="content"></text>
+            </view>
+    </view>
+-->
+<view class="left_right_top_gap">
+    <scroll-view scroll-y="true" style="height: 45rem;background-color: rgb(241, 241, 241);">
+        <view hidden="{{di1}}" class="whiteblock">
+            <view class="headline">联系的观点</view>
+            <view class="left_right_gap">
+                <text class="content">联系就是事物内部<text style="color: red; opacity: {{xianshi}};">各要素</text>之间相互制约相互影响的关系。联系是事物<text style="color: red; opacity: {{xianshi}};">固有</text>的、<text style="color: red; opacity: {{xianshi}};">客观</text>的，具有<text style="color: red; opacity: {{xianshi}};">客观</text>性、<text style="color: red; opacity: {{xianshi}};">普遍</text>性与<text style="color: red; opacity: {{xianshi}};">多样性</text>性。世界上一切<text style="color: red; opacity: {{xianshi}};">事物</text>都处于普遍<text style="color: red; opacity: {{xianshi}};">联系</text>之中，整个世界是一个普遍<text style="color: red; opacity: {{xianshi}};">联系</text>的整体，联系是通过<text style="color: red; opacity: {{xianshi}};">中介</text>实现的。事物的<text style="color: red; opacity: {{xianshi}};">联系</text>是事物本身所<text style="color: red; opacity: {{xianshi}};">固有</text>的，不是<text style="color: red; opacity: {{xianshi}};">主观臆测</text>的。所以我们应用<text style="color: red; opacity: {{xianshi}};">联系</text>的观点看问题，把握事物的<text style="color: red; opacity: {{xianshi}};">联系</text>和普遍<text style="color: red; opacity: {{xianshi}};">联系</text>，提高活动<text style="color: red; opacity: {{xianshi}};">自觉</text>性。</text>
+            </view>
+        </view>
+
+        <view hidden="{{di2}}" class="whiteblock">
+            <view class="headline">发展的观点</view>
+            <view class="left_right_gap">
+                <text class="content">发展的<text style="color: red; opacity: {{xianshi}};">实质</text>就是<text style="color: red; opacity: {{xianshi}};">新事物</text>产生，<text style="color: red; opacity: {{xianshi}};">旧事物</text>灭亡。事物的<text style="color: red; opacity: {{xianshi}};">发展</text>是一个过程。一切事物只有经过<text style="color: red; opacity: {{xianshi}};">一定的过程</text>才能实现自身的发展。所以我们要用<text style="color: red; opacity: {{xianshi}};">发展</text>的眼光看问题，推动<text style="color: red; opacity: {{xianshi}};">新事物</text>的发展，将事物看作一个不断<text style="color: red; opacity: {{xianshi}};">变化发展</text>的过程。
+                </text>
+            </view>
+        </view>
+
+        <view hidden="{{di3}}" class="whiteblock">
+            <view class="headline">矛盾同一性与斗争性</view>
+            <view class="left_right_gap">
+                <text class="content">矛盾的同一性是<text style="color: red; opacity: {{xianshi}};">相对</text>的、<text style="color: red; opacity: {{xianshi}};">有条件</text>的，矛盾的斗争性是<text style="color: red; opacity: {{xianshi}};">绝对</text>的、<text style="color: red; opacity: {{xianshi}};">无条件</text>的。矛盾的同一性和斗争性是<text style="color: red; opacity: {{xianshi}};">相互联结</text>、<text style="color: red; opacity: {{xianshi}};">相互制约</text>的。同一性不能<text style="color: red; opacity: {{xianshi}};">脱离</text>斗争性而<text style="color: red; opacity: {{xianshi}};">存在</text>，没有斗争性就没有同一性，因为矛盾的同一性是以<text style="color: red; opacity: {{xianshi}};">差别和对立</text>为前提的，是包含<text style="color: red; opacity: {{xianshi}};">差别和对立</text>的同一；斗争性也不能<text style="color: red; opacity: {{xianshi}};">脱离</text>同一性而<text style="color: red; opacity: {{xianshi}};">存在</text>，斗争性<text style="color: red; opacity: {{xianshi}};">寓于</text>同一性之中。<text style="color: red; opacity: {{xianshi}};">无条件</text>的、<text style="color: red; opacity: {{xianshi}};">绝对</text>的斗争性与<text style="color: red; opacity: {{xianshi}};">有条件</text>的、<text style="color: red; opacity: {{xianshi}};">相对</text>的同一性相<text style="color: red; opacity: {{xianshi}};">结合</text>，构成事物的<text style="color: red; opacity: {{xianshi}};">矛盾运动</text>，推动事物的<text style="color: red; opacity: {{xianshi}};">发展</text>。事物<text style="color: red; opacity: {{xianshi}};">发展</text>不仅相辅相成也可以相反相成。所以我们在分析和<text style="color: red; opacity: {{xianshi}};">解决矛盾</text>时，必须从<text style="color: red; opacity: {{xianshi}};">对立中把握统一</text>，<text style="color: red; opacity: {{xianshi}};">统一中把握对立</text>，促进事物的<text style="color: red; opacity: {{xianshi}};">转化</text>。
+                </text>
+            </view>
+        </view>
+
+        <view hidden="{{di4}}" class="whiteblock">
+            <view class="headline">矛盾具有普遍性和客观性</view>
+            <view class="left_right_gap">
+                <text class="content">矛盾是指事物之间的<text style="color: red; opacity: {{xianshi}};">对立和统一</text>及其关系。矛盾存在于一切<text style="color: red; opacity: {{xianshi}};">事物发展</text>过程的始终，<text style="color: red; opacity: {{xianshi}};">无时不在</text>，<text style="color: red; opacity: {{xianshi}};">无时不有</text>。所以我们要<text style="color: red; opacity: {{xianshi}};">承认</text>矛盾、<text style="color: red; opacity: {{xianshi}};">正视</text>矛盾，全面看待、分析解决矛盾。</text>
+            </view>
+        </view>
+
+        <view hidden="{{di5}}" class="whiteblock">
+            <view class="headline">矛盾具有特殊性</view>
+            <view class="left_right_gap">
+                <text class="content">矛盾的<text style="color: red; opacity: {{xianshi}};">特殊性</text>是指<text style="color: red; opacity: {{xianshi}};">具体</text>事物所包含的矛盾以及每一矛盾的<text style="color: red; opacity: {{xianshi}};">各个方面</text>都有其<text style="color: red; opacity: {{xianshi}};">特点</text>。具体表现为三种情形：一是<text style="color: red; opacity: {{xianshi}};">不同事物的矛盾</text>各有其特点；二是同一事物的矛盾<text style="color: red; opacity: {{xianshi}};">在不同发展过程和发展阶段</text>各有不同特点；三是<text style="color: red; opacity: {{xianshi}};">构成事物的诸多矛盾以及每一矛盾的不同方面</text>各有不同的<text style="color: red; opacity: {{xianshi}};">性质</text>、<text style="color: red; opacity: {{xianshi}};">地位和作用</text>、所以我们要坚持<text style="color: red; opacity: {{xianshi}};">具体问题具体分析</text>，这是马克思主义<text style="color: red; opacity: {{xianshi}};">活的灵魂</text>。</text>
+            </view>
+        </view>
+
+        <view hidden="{{di6}}" class="whiteblock">
+            <view class="headline">矛盾普遍性与特殊性</view>
+            <view class="left_right_gap">
+                <text class="content">矛盾的<text style="color: red; opacity: {{xianshi}};">普遍性</text>和<text style="color: red; opacity: {{xianshi}};">特殊性</text>是相互<text style="color: red; opacity: {{xianshi}};">联结</text>、不可<text style="color: red; opacity: {{xianshi}};">分离</text>的。任何现实存在的事物都是<text style="color: red; opacity: {{xianshi}};">共性</text>和<text style="color: red; opacity: {{xianshi}};">个性</text>的<text style="color: red; opacity: {{xianshi}};">有机统一</text>，个性背后<text style="color: red; opacity: {{xianshi}};">隐藏</text>着共性，共性<text style="color: red; opacity: {{xianshi}};">寓于</text>个性之中。世界上没有<text style="color: red; opacity: {{xianshi}};">脱离</text>共性的个性，也没有<text style="color: red; opacity: {{xianshi}};">脱离</text>个性的共性。所以我们要坚持事物<text style="color: red; opacity: {{xianshi}};">共性与个性</text>的统一，从个别中把握一般，学会<text style="color: red; opacity: {{xianshi}};">举一反三</text>。</text>
+            </view>
+        </view>
+
+        <view hidden="{{di7}}" class="whiteblock">
+            <view class="headline">两点论和重点论</view>
+            <view class="left_right_gap">
+                <text class="content">事物的发展来自事物<text style="color: red; opacity: {{xianshi}};">内部矛盾</text>运动的结果。<text style="color: red; opacity: {{xianshi}};">主要矛盾</text>决定事物发展的<text style="color: red; opacity: {{xianshi}};">方向</text>，<text style="color: red; opacity: {{xianshi}};">次要矛盾</text>也影响着事物发展的方向。所以我们要坚持<text style="color: red; opacity: {{xianshi}};">两点论和重点论</text>的统一，既要抓住事物发展的<text style="color: red; opacity: {{xianshi}};">重点和主流</text>，<text style="color: red; opacity: {{xianshi}};">分清主次</text>，把握事情发展的<text style="color: red; opacity: {{xianshi}};">根本</text>，也要看到事物的<text style="color: red; opacity: {{xianshi}};">整体</text>，综合运用<text style="color: red; opacity: {{xianshi}};">矛盾分析法</text>认识和解决问题。\n（1）主要矛盾和次要矛盾的辩证统一\n主要矛盾是矛盾体系中处于<text style="color: red; opacity: {{xianshi}};">支配</text>地位、对事物发展起<text style="color: red; opacity: {{xianshi}};">决定</text>作用的矛盾。非根本矛盾、次要矛盾是处于<text style="color: red; opacity: {{xianshi}};">服从</text>地位的矛盾。次要矛盾也对事物发展具有<text style="color: red; opacity: {{xianshi}};">影响</text>作用。所以我们要<text style="color: red; opacity: {{xianshi}};">分清</text>主次，<text style="color: red; opacity: {{xianshi}};">抓住</text>重点，<text style="color: red; opacity: {{xianshi}};">解决</text>主要矛盾，同时不能<text style="color: red; opacity: {{xianshi}};">忽视</text>次要矛盾的发展。\n（2）内部矛盾和外部矛盾辩证统一\n内部矛盾是事物发展的<text style="color: red; opacity: {{xianshi}};">根据</text>，外部矛盾是事物发展的<text style="color: red; opacity: {{xianshi}};">条件</text>，外因通过内因起<text style="color: red; opacity: {{xianshi}};">作用</text>。因此推动事物发展过程中，既要注重<text style="color: red; opacity: {{xianshi}};">解决事物的内部矛盾</text>，也要<text style="color: red; opacity: {{xianshi}};">注重解决事物的外部矛盾</text>，共同促进事物的前进。</text>
+            </view>
+        </view>
+
+        <view hidden="{{di8}}" class="whiteblock">
+            <view class="headline">原因与结果</view>
+            <view class="left_right_gap">
+                <text class="content">原因和结果是<text style="color: red; opacity: {{xianshi}};">揭示事物</text>的<text style="color: red; opacity: {{xianshi}};">前后相继</text>、<text style="color: red; opacity: {{xianshi}};">彼此制约</text>的关系范畴。原因和结果是辩证统一的，原因与结果相互<text style="color: red; opacity: {{xianshi}};">作用</text>、相互<text style="color: red; opacity: {{xianshi}};">渗透</text>，在一定条件下可以相互<text style="color: red; opacity: {{xianshi}};">转化</text>。原因与结果是复杂多样的，有<text style="color: red; opacity: {{xianshi}};">一因多果</text>、<text style="color: red; opacity: {{xianshi}};">同因异果</text>等。所以我们要<text style="color: red; opacity: {{xianshi}};">辩证</text>地分析事物的因果关系，分析存在和发展的不同<text style="color: red; opacity: {{xianshi}};">原因</text>及其不同<text style="color: red; opacity: {{xianshi}};">结果</text>，增强活动的<text style="color: red; opacity: {{xianshi}};">自觉</text>性、<text style="color: red; opacity: {{xianshi}};">预测</text>性和<text style="color: red; opacity: {{xianshi}};">调控</text>性</text>
+            </view>
+        </view>
+
+        <view hidden="{{di9}}" class="whiteblock">
+            <view class="headline">必然性与偶然性</view>
+            <view class="left_right_gap">
+                <text class="content">必然与偶然是揭示事物<text style="color: red; opacity: {{xianshi}};">产生</text>、<text style="color: red; opacity: {{xianshi}};">发展</text>和<text style="color: red; opacity: {{xianshi}};">衰亡</text>过程中的不同趋势的一对范畴。必然与偶然是对立统一的。首先，必然与偶然<text style="color: red; opacity: {{xianshi}};">相互依存</text>。没有<text style="color: red; opacity: {{xianshi}};">脱离</text>偶然的必然，不通过<text style="color: red; opacity: {{xianshi}};">偶然</text>而只表现为<text style="color: red; opacity: {{xianshi}};">纯粹必然</text>的情况是不存在的。必然要通过<text style="color: red; opacity: {{xianshi}};">偶然</text>表现出来，并为自己开辟道路。同时，也没有<text style="color: red; opacity: {{xianshi}};">脱离</text>必然的偶然。其次，必然与偶然在一定条件下<text style="color: red; opacity: {{xianshi}};">相互转化</text>。所以我们在<text style="color: red; opacity: {{xianshi}};">认识</text>和<text style="color: red; opacity: {{xianshi}};">实践</text>中，必须重视事物的发展的<text style="color: red; opacity: {{xianshi}};">必然规律</text>和<text style="color: red; opacity: {{xianshi}};">发展趋势</text>，但同时也要<text style="color: red; opacity: {{xianshi}};">充分估计</text>到各种<text style="color: red; opacity: {{xianshi}};">偶然因素</text>的作用，把握有利于事物发展的<text style="color: red; opacity: {{xianshi}};">机遇</text>。</text>
+            </view>
+        </view>
+
+        <view hidden="{{di10}}" class="whiteblock">
+            <view class="headline">现象与本质</view>
+            <view class="left_right_gap">
+                <text class="content">现象和本质是揭示客观事物的<text style="color: red; opacity: {{xianshi}};">外部表现</text>和<text style="color: red; opacity: {{xianshi}};">内部联系</text>相互关系的范畴。两者是辩证统一的。本质是事物的<text style="color: red; opacity: {{xianshi}};">根本性质</text>，是<text style="color: red; opacity: {{xianshi}};">相对稳定</text>的，<text style="color: red; opacity: {{xianshi}};">深藏</text>于事物的内部，只有通过<text style="color: red; opacity: {{xianshi}};">理性思维</text>才能把握；现象是事物的<text style="color: red; opacity: {{xianshi}};">外部联系</text>和<text style="color: red; opacity: {{xianshi}};">表面特征</text>，是<text style="color: red; opacity: {{xianshi}};">个别</text>的、<text style="color: red; opacity: {{xianshi}};">具体</text>的、<text style="color: red; opacity: {{xianshi}};">多变易逝</text>的，可以直接为<text style="color: red; opacity: {{xianshi}};">人的感官</text>所感知。本质<text style="color: red; opacity: {{xianshi}};">决定</text>现象，本质问题通过一定的<text style="color: red; opacity: {{xianshi}};">现象</text>表现自己的存在；任何<text style="color: red; opacity: {{xianshi}};">现象</text>都从某方面表现<text style="color: red; opacity: {{xianshi}};">本质</text>，本质总要通过现象表现。所以我们要通过现象看清事物的本质。</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di11}}" class="whiteblock">
+            <view class="headline">客观规律性与主观能动性</view>
+            <view class="left_right_gap">
+                <text class="content">规律具有<text style="color: red; opacity: {{xianshi}};">客观性</text>，是物质世界本身所<text style="color: red; opacity: {{xianshi}};">固有</text>的，是不以人的意志为<text style="color: red; opacity: {{xianshi}};">转移</text>的，尊重<text style="color: red; opacity: {{xianshi}};">客观规律</text>是正确发挥<text style="color: red; opacity: {{xianshi}};">主观能动性</text>的前提。人具有<text style="color: red; opacity: {{xianshi}};">主观能动性</text>，能够认识和利用规律积极<text style="color: red; opacity: {{xianshi}};">反映</text>世界和<text style="color: red; opacity: {{xianshi}};">改造</text>世界，具有能动的<text style="color: red; opacity: {{xianshi}};">反作用</text>。所以我们必须要承认<text style="color: red; opacity: {{xianshi}};">客观规律性</text>，在尊重客观规律性的基础上，要<text style="color: red; opacity: {{xianshi}};">充分发挥</text>人的<text style="color: red; opacity: {{xianshi}};">主观能动性</text>。同时，要树立正确的<text style="color: red; opacity: {{xianshi}};">实践观念</text>和<text style="color: red; opacity: {{xianshi}};">方式</text>，坚持一切从<text style="color: red; opacity: {{xianshi}};">实际</text>出发，在正确的<text style="color: red; opacity: {{xianshi}};">实践中</text>发挥人的<text style="color: red; opacity: {{xianshi}};">主观能动</text>性。</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di12}}" class="whiteblock">
+            <view class="headline">实践是人与自然关系的基础</view>
+            <view class="left_right_gap">
+                <text class="content">实践的本质是人<text style="color: red; opacity: {{xianshi}};">能动</text>地<text style="color: red; opacity: {{xianshi}};">改造</text>世界的客观物质性活动，实践构成人类存在的<text style="color: red; opacity: {{xianshi}};">基本方式</text>，<text style="color: red; opacity: {{xianshi}};">实践</text>是使物质世界<text style="color: red; opacity: {{xianshi}};">分化</text>为<text style="color: red; opacity: {{xianshi}};">自然界</text>与<text style="color: red; opacity: {{xianshi}};">人类社会</text>的<text style="color: red; opacity: {{xianshi}};">历史</text>前提，又是使<text style="color: red; opacity: {{xianshi}};">自然界</text>与<text style="color: red; opacity: {{xianshi}};">人类社会</text>统一起来的<text style="color: red; opacity: {{xianshi}};">现实基础</text>。自然界是人类社会形成的<text style="color: red; opacity: {{xianshi}};">前提</text>，人类社会的<text style="color: red; opacity: {{xianshi}};">存在</text>和<text style="color: red; opacity: {{xianshi}};">发展</text>，又反过来<text style="color: red; opacity: {{xianshi}};">影响</text>和<text style="color: red; opacity: {{xianshi}};">制约</text>自然界。人类只有<text style="color: red; opacity: {{xianshi}};">遵循</text>自然规律才能<text style="color: red; opacity: {{xianshi}};">防止</text>在开发利用自然上走弯路。人类对大自然的伤害最终会伤及人类自身，这是无法<text style="color: red; opacity: {{xianshi}};">抗拒</text>的规律。所以我们要树立正确的<text style="color: red; opacity: {{xianshi}};">实践</text>观念和方式，促进人与自然<text style="color: red; opacity: {{xianshi}};">和谐共生</text>。</text>
+            </view>
+        </view>
+        <!--认识论部分-->
+
+        <view hidden="{{di13}}" class="whiteblock">
+            <view class="headline">实践与认识</view>
+            <view class="left_right_gap">
+                <text class="content">（1）强调实践对认识的<text style="color: red; opacity: {{xianshi}};">决定</text>作用：实践的本质是人类<text style="color: red; opacity: {{xianshi}};">能动</text>地改造世界的<text style="color: red; opacity: {{xianshi}};">客观物质性</text>活动。实践是认识的<text style="color: red; opacity: {{xianshi}};">基础</text>，对认识具有<text style="color: red; opacity: {{xianshi}};">决定</text>作用。实践是认识的<text style="color: red; opacity: {{xianshi}};">来源</text>、<text style="color: red; opacity: {{xianshi}};">动力</text>、<text style="color: red; opacity: {{xianshi}};">检验标准</text>，也是认识的目的。所以我们要坚持一切从实际出发、实事求是，坚持改造主观世界同改造客观世界相统一。\n（2）强调认识的<text style="color: red; opacity: {{xianshi}};">能动反作用</text>：实践是认识的基础，认识是实践基础上<text style="color: red; opacity: {{xianshi}};">主体</text>对<text style="color: red; opacity: {{xianshi}};">客体</text>的能动的反映，具有<text style="color: red; opacity: {{xianshi}};">目的</text>性、<text style="color: red; opacity: {{xianshi}};">计划</text>性、<text style="color: red; opacity: {{xianshi}};">创造</text>性，对实践具有能动的<text style="color: red; opacity: {{xianshi}};">指导</text>作用。所以我们要运用正确的<text style="color: red; opacity: {{xianshi}};">理性认识</text>指导实践的进程，实现理论创新和实践创新的良性互动，坚持改造主观世界同客观世界相统一。</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di14}}" class="whiteblock">
+            <view class="headline">认识过程是反复性和无限性的</view>
+            <view class="left_right_gap">
+                <text class="content">认识的规律就是在实践的基础上从<text style="color: red; opacity: {{xianshi}};">感性认识</text>到<text style="color: red; opacity: {{xianshi}};">理性认识</text>、再从<text style="color: red; opacity: {{xianshi}};">理性认识</text>到<text style="color: red; opacity: {{xianshi}};">实践</text>两次飞跃的辩证过程。认识的发展是<text style="color: red; opacity: {{xianshi}};">反复性</text>和<text style="color: red; opacity: {{xianshi}};">无限性</text>的统一。认识运动的<text style="color: red; opacity: {{xianshi}};">反复性</text>是指人们对一个复杂事物的认识，往往是要经过由<text style="color: red; opacity: {{xianshi}};">实践</text>到<text style="color: red; opacity: {{xianshi}};">认识</text>、由<text style="color: red; opacity: {{xianshi}};">认识</text>到<text style="color: red; opacity: {{xianshi}};">实践</text>的多次反复才能完成。认识运动的<text style="color: red; opacity: {{xianshi}};">无限性</text>是指客观世界是不断发展的，人的认识运动也必然随之不断发展。所以我们要坚持认识与实践具体的、历史的统一，不断推进<text style="color: red; opacity: {{xianshi}};">认识</text>过程的深化</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di15}}" class="whiteblock">
+            <view class="headline">感性认识与理性认识</view>
+            <view class="left_right_gap">
+                <text class="content">感性认识是认识的<text style="color: red; opacity: {{xianshi}};">低级</text>阶段，理性认识是认识的<text style="color: red; opacity: {{xianshi}};">高级</text>阶段。感性认识和理性认识是相互<text style="color: red; opacity: {{xianshi}};">依赖</text>、相互<text style="color: red; opacity: {{xianshi}};">渗透</text>的，所以我们要促进<text style="color: red; opacity: {{xianshi}};">感性认识</text>向<text style="color: red; opacity: {{xianshi}};">理性认识</text>的飞跃。具体说来就是要占有丰富而真实的<text style="color: red; opacity: {{xianshi}};">感性材料</text>，运用科学的思维方法对<text style="color: red; opacity: {{xianshi}};">感性材料</text>进行加工制作，做到去粗取精、去伪存真、由此及彼、由表及里。</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di16}}" class="whiteblock">
+            <view class="headline">非理性因素对认识过程的推动作用</view>
+            <view class="left_right_gap">
+                <text class="content">在认识的辩证运动中，我们既要注重<text style="color: red; opacity: {{xianshi}};">理性因素</text>的作用，同时也不可忽略<text style="color: red; opacity: {{xianshi}};">非理性因素</text>的重要作用。理性因素是指人的<text style="color: red; opacity: {{xianshi}};">理性直观</text>、<text style="color: red; opacity: {{xianshi}};">理性思维</text>等能力，它在认识活动中的作用主要有<text style="color: red; opacity: {{xianshi}};">指导</text>作用、<text style="color: red; opacity: {{xianshi}};">解释</text>作用和<text style="color: red; opacity: {{xianshi}};">预见</text>作用等。非理性因素主要是认识主体的<text style="color: red; opacity: {{xianshi}};">情感</text>和<text style="color: red; opacity: {{xianshi}};">意志</text>。非理性因素对人认识能力和认识活动具有<text style="color: red; opacity: {{xianshi}};">激活</text>、<text style="color: red; opacity: {{xianshi}};">驱动</text>和<text style="color: red; opacity: {{xianshi}};">控制</text>作用。所以我们要重视非理性因素的作用，推动认识能力的提升。</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di17}}" class="whiteblock">
+            <view class="headline">真理绝对性与相对性</view>
+            <view class="left_right_gap">
+                <text class="content">真理的<text style="color: red; opacity: {{xianshi}};">绝对性</text>，是指真理的内容表明了<text style="color: red; opacity: {{xianshi}};">主客观</text>统一的<text style="color: red; opacity: {{xianshi}};">确定性</text>和<text style="color: red; opacity: {{xianshi}};">发展</text>的<text style="color: red; opacity: {{xianshi}};">无限性</text>。真理的<text style="color: red; opacity: {{xianshi}};">相对性</text>，是指人们在一定条件下对事物的客观过程及其发展规律的<text style="color: red; opacity: {{xianshi}};">正确</text>认识总是<text style="color: red; opacity: {{xianshi}};">有限度</text>的。绝对真理和相对真理是相互<text style="color: red; opacity: {{xianshi}};">依存</text>、相互<text style="color: red; opacity: {{xianshi}};">包含的</text>。真理的绝对性<text style="color: red; opacity: {{xianshi}};">寓于</text>真理的相对性之中，<text style="color: red; opacity: {{xianshi}};">无数</text>相对真理<text style="color: red; opacity: {{xianshi}};">总和</text>构成绝对真理。所以我们要坚持两者的统一，在实践中不断推进真理的发展和深化。</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di18}}" class="whiteblock">
+            <view class="headline">真理与谬误</view>
+            <view class="left_right_gap">
+                <text class="content">一方面，<text style="color: red; opacity: {{xianshi}};">真理</text>和<text style="color: red; opacity: {{xianshi}};">谬误</text>在<text style="color: red; opacity: {{xianshi}};">确定</text>的范围内是<text style="color: red; opacity: {{xianshi}};">对立</text>的，是性质不同的两种认识。真理是对客观事物的<text style="color: red; opacity: {{xianshi}};">本质</text>和<text style="color: red; opacity: {{xianshi}};">规律</text>的<text style="color: red; opacity: {{xianshi}};">正确</text>反映，谬误是对客观事物及其规律的<text style="color: red; opacity: {{xianshi}};">错误</text>反映。另一方面，真理和谬误是统一的，真理和谬误相比较而存在，在<text style="color: red; opacity: {{xianshi}};">一定</text>条件下相互<text style="color: red; opacity: {{xianshi}};">转化</text>。所以我们要坚持真理的<text style="color: red; opacity: {{xianshi}};">一元性</text>，与谬误作斗争，同时也要促进谬误在<text style="color: red; opacity: {{xianshi}};">一定</text>条件下向真理的转化。</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di19}}" class="whiteblock">
+            <view class="headline">真理与价值</view>
+            <view class="left_right_gap">
+                <text class="content">真理的<text style="color: red; opacity: {{xianshi}};">本性</text>是客观性，要求<text style="color: red; opacity: {{xianshi}};">主观</text>和<text style="color: red; opacity: {{xianshi}};">客观</text>相符合、一致。价值体现的是主客体之间的<text style="color: red; opacity: {{xianshi}};">意义</text>关系，具有<text style="color: red; opacity: {{xianshi}};">主体</text>性、<text style="color: red; opacity: {{xianshi}};">客观</text>性、<text style="color: red; opacity: {{xianshi}};">多维</text>性、<text style="color: red; opacity: {{xianshi}};">社会历史</text>性等特点。真理和价值统一于人类的<text style="color: red; opacity: {{xianshi}};">实践</text>活动之中。任何<text style="color: red; opacity: {{xianshi}};">成功</text>的实践必然是<text style="color: red; opacity: {{xianshi}};">真理尺度</text>和<text style="color: red; opacity: {{xianshi}};">价值尺度</text>的辩证统一，是合<text style="color: red; opacity: {{xianshi}};">规律性</text>与合<text style="color: red; opacity: {{xianshi}};">目的性</text>的统一。真理与价值是紧密<text style="color: red; opacity: {{xianshi}};">联系</text>、不可<text style="color: red; opacity: {{xianshi}};">分割</text>的。一方面，价值尺度必须以<text style="color: red; opacity: {{xianshi}};">真理</text>为前提。脱离了真理尺度，价值尺度就偏离了合理的、正确的轨道。另一方面，人类自身需要的<text style="color: red; opacity: {{xianshi}};">内在尺度</text>，推动者人们不断发现<text style="color: red; opacity: {{xianshi}};">新的真理</text>。脱离了价值尺度，真理就缺失了<text style="color: red; opacity: {{xianshi}};">主体</text>意义。因此，我们要处理好真理和价值的关系，实现二者的<text style="color: red; opacity: {{xianshi}};">具体</text>的、<text style="color: red; opacity: {{xianshi}};">历史</text>的统一。</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di20}}" class="whiteblock">
+            <view class="headline">实践标准</view>
+            <view class="left_right_gap">
+                <text class="content">（1）实践是检验真理的<text style="color: red; opacity: {{xianshi}};">唯一</text>标准：这是由<text style="color: red; opacity: {{xianshi}};">真理</text>的<text style="color: red; opacity: {{xianshi}};">本性</text>和<text style="color: red; opacity: {{xianshi}};">实践</text>的<text style="color: red; opacity: {{xianshi}};">特点</text>所决定的。真理的<text style="color: red; opacity: {{xianshi}};">本性</text>要求<text style="color: red; opacity: {{xianshi}};">主观</text>和<text style="color: red; opacity: {{xianshi}};">客观</text>的<text style="color: red; opacity: {{xianshi}};">一致</text>和<text style="color: red; opacity: {{xianshi}};">符合</text>，因而决定了检验标准既不能纯粹在<text style="color: red; opacity: {{xianshi}};">主观范围</text>内去<text style="color: red; opacity: {{xianshi}};">寻找</text>，也不能纯粹在<text style="color: red; opacity: {{xianshi}};">客观范围</text>内去<text style="color: red; opacity: {{xianshi}};">解决</text>。实践是主观见于客观的物质活动，具有<text style="color: red; opacity: {{xianshi}};">直接现实</text>性的<text style="color: red; opacity: {{xianshi}};">特点</text>和<text style="color: red; opacity: {{xianshi}};">优点</text>。因而只有实践才能将主观认识同客观实在联系起来加以对照，实践是检验真理的唯一标准。\n（2）实践检验真理标准的<text style="color: red; opacity: {{xianshi}};">确定</text>性与<text style="color: red; opacity: {{xianshi}};">不确定</text>性：实践作为检验真理的标准，既是确定的，又是不确定的，是确定性和不确定性的统一。实践标准是<text style="color: red; opacity: {{xianshi}};">确定</text>的和<text style="color: red; opacity: {{xianshi}};">绝对</text>的，因为只有实践<text style="color: red; opacity: {{xianshi}};">才能</text>检验<text style="color: red; opacity: {{xianshi}};">认识</text>的真理性，凡经过实践证明了的一切认识都是<text style="color: red; opacity: {{xianshi}};">客观真理</text>，都具有<text style="color: red; opacity: {{xianshi}};">不可推翻</text>的性质。实践标准的<text style="color: red; opacity: {{xianshi}};">不确定</text>性是因为实践检验真理是一个<text style="color: red; opacity: {{xianshi}};">过程</text>，不是一次完成的，已经经过实践检验过的真理还要<text style="color: red; opacity: {{xianshi}};">继续</text>经受实践的检验。因此必须坚持实践检验真理标准的确定性和不确定性的统一。把实践对真理的检验，看作是<text style="color: red; opacity: {{xianshi}};">无数</text>历史发展着的<text style="color: red; opacity: {{xianshi}};">全部</text>人类实践对真理的检验。</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di21}}" class="whiteblock">
+            <view class="headline">实现理论创新和实践创新的良性互动</view>
+            <view class="left_right_gap">
+                <text class="content"><text style="color: red; opacity: {{xianshi}};">创新</text>是社会发展的不竭动力，人类发展进步的历史就是不断<text style="color: red; opacity: {{xianshi}};">创新</text>的历史。人类的创新活动具有<text style="color: red; opacity: {{xianshi}};">丰富</text>的内容和表现，其中主要是<text style="color: red; opacity: {{xianshi}};">理论创新</text>和<text style="color: red; opacity: {{xianshi}};">实践创新</text>两个基本方面。第一，<text style="color: red; opacity: {{xianshi}};">实践创新</text>为<text style="color: red; opacity: {{xianshi}};">理论创新</text>提供不竭的动力<text style="color: red; opacity: {{xianshi}};">源泉</text>。第二，<text style="color: red; opacity: {{xianshi}};">理论创新</text>为<text style="color: red; opacity: {{xianshi}};">实践创新</text>提供<text style="color: red; opacity: {{xianshi}};">科学</text>的行动<text style="color: red; opacity: {{xianshi}};">指南</text>。第三我们要努力实现<text style="color: red; opacity: {{xianshi}};">理论创新和实践创新的良性互动</text>。所谓<text style="color: red; opacity: {{xianshi}};">良性互动</text>是指二者之间存在良好的、积极的相互作用和相互影响，或者说二者之间形成<text style="color: red; opacity: {{xianshi}};">相互激发</text>、<text style="color: red; opacity: {{xianshi}};">共同促进</text>的<text style="color: red; opacity: {{xianshi}};">因果</text>关系。这种良性互动需要人的努力才能完成</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di22}}" class="whiteblock">
+            <view class="headline">科学技术的作用</view>
+            <view class="left_right_gap">
+                <text class="content">科学技术是推动社会发展的<text style="color: red; opacity: {{xianshi}};">动力之一</text>。在现代，科学技术日益成为生产发展的<text style="color: red; opacity: {{xianshi}};">决定</text>性因素。科学技术是<text style="color: red; opacity: {{xianshi}};">先进</text>生产力的<text style="color: red; opacity: {{xianshi}};">集中体现</text>和<text style="color: red; opacity: {{xianshi}};">主要标志</text>，是<text style="color: red; opacity: {{xianshi}};">第一</text>生产力。但科学技术是一把<text style="color: red; opacity: {{xianshi}};">双刃剑</text>，科学技术的作用既受到一定<text style="color: red; opacity: {{xianshi}};">客观条件</text>的<text style="color: red; opacity: {{xianshi}};">制约</text>，也受到一定<text style="color: red; opacity: {{xianshi}};">主观条件</text>的影响，有时会“表现为<text style="color: red; opacity: {{xianshi}};">异己</text>的、<text style="color: red; opacity: {{xianshi}};">敌对</text>的和<text style="color: red; opacity: {{xianshi}};">统治</text>的权利”。所以我们必须要正确发挥<text style="color: red; opacity: {{xianshi}};">主观能动性</text>，始终坚持使<text style="color: red; opacity: {{xianshi}};">科学技术</text>为人类社会的健康发展服务，让科技为人类造福。</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di23}}" class="whiteblock">
+            <view class="headline">人民群众的作用</view>
+            <view class="left_right_gap">
+                <text class="content">人的本质是<text style="color: red; opacity: {{xianshi}};">社会关系的总和</text>，人的本质属性是<text style="color: red; opacity: {{xianshi}};">社会性</text>。在社会历史发展中，人民群众起着<text style="color: red; opacity: {{xianshi}};">决定</text>性的作用。人民群众是一个<text style="color: red; opacity: {{xianshi}};">历史范畴</text>。从质上看，人民群众是指<text style="color: red; opacity: {{xianshi}};">一切</text>对社会历史发展起<text style="color: red; opacity: {{xianshi}};">推动</text>作用的人；从量上看，人民群众是指社会人口中的<text style="color: red; opacity: {{xianshi}};">绝大多数</text>。人民群众是社会历史的<text style="color: red; opacity: {{xianshi}};">主体</text>，是历史的<text style="color: red; opacity: {{xianshi}};">创造者</text>。人民群众是<text style="color: red; opacity: {{xianshi}};">社会物质财富</text>的创造者，也是<text style="color: red; opacity: {{xianshi}};">社会精神财富</text>的创造者，人民群众是<text style="color: red; opacity: {{xianshi}};">社会变革</text>的<text style="color: red; opacity: {{xianshi}};">决定力量</text>。人民群众创造历史的作用是同社会<text style="color: red; opacity: {{xianshi}};">基本矛盾</text>推动社会前进的过程相<text style="color: red; opacity: {{xianshi}};">一致</text>的。人民群众的<text style="color: red; opacity: {{xianshi}};">总体意愿</text>和行动代表了历史发展的<text style="color: red; opacity: {{xianshi}};">方向</text>，人民群众的社会实践最终<text style="color: red; opacity: {{xianshi}};">决定</text>历史发展的<text style="color: red; opacity: {{xianshi}};">结局</text>所以我们必须坚持群众<text style="color: red; opacity: {{xianshi}};">观点</text>和群众<text style="color: red; opacity: {{xianshi}};">路线</text>，充分<text style="color: red; opacity: {{xianshi}};">相信</text>群众，坚持<text style="color: red; opacity: {{xianshi}};">依靠</text>群众，密切<text style="color: red; opacity: {{xianshi}};">联系</text>群众，<text style="color: red; opacity: {{xianshi}};">全心全意</text>为人民群众服务。</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di24}}" class="whiteblock">
+            <view class="headline">社会存在与社会意识、社会历史发展的基本动力/规律</view>
+            <view class="left_right_gap">
+                <text class="content"><text style="color: red; opacity: {{xianshi}};">社会存在</text>是<text style="color: red; opacity: {{xianshi}};">社会生活</text>的物质方面，<text style="color: red; opacity: {{xianshi}};">社会意识</text>是<text style="color: red; opacity: {{xianshi}};">社会生活</text>的精神方面。社会存在<text style="color: red; opacity: {{xianshi}};">决定</text>社会意识，社会意识对社会存在具有<text style="color: red; opacity: {{xianshi}};">能动反作用</text>。<text style="color: red; opacity: {{xianshi}};">生产力</text>与<text style="color: red; opacity: {{xianshi}};">生产关系</text>的矛盾运动、<text style="color: red; opacity: {{xianshi}};">经济基础</text>与<text style="color: red; opacity: {{xianshi}};">上层建筑</text>的矛盾运动是社会历史发展的<text style="color: red; opacity: {{xianshi}};">根本动力</text>，所以我们一定要坚持生产力这个社会历史发展的基石，不断通过<text style="color: red; opacity: {{xianshi}};">改革</text>调整不适应生产力发展的生产关系和上层建筑，推动社会历史不断向前进。</text>
+            </view>
+        </view>
+
+        <view hidden="{{di25}}" class="whiteblock">
+            <view class="headline">马克思主义中国化</view>
+            <view class="left_right_gap">
+                <text class="content">（1）马克思主义中国化的理论成果及其历史及进程：理论的生命力在创新，马克思主义是我们立党立国、兴党强国的根本指导思想。中国共产党的历史，是一部不断推进马克思注意中国化的历史，是一部不断推进理论创新、进行理论创造的历史。百年来，中国共产党推进马克思主义中国化始终围绕着一个主题：中华民族伟大复兴。新民主主义革命时期，以毛泽东同志为主要代表的中国共产党人，把马克思列宁主义基本原理同中国具体实际相结合，创立了毛泽东思想，指引中国取得了新民主主义革命的伟大胜利；社会主义革命和建设时期，党结合新的实际进一步丰富和发展了毛泽东思想，指导中国创造了社会主义革命和建设的伟大成绩。改革开放和社会主义现代化建设新时期，党从新的实践和时代特征出发坚持和发展马克思主义，形成中国特色社会主义理论体系，领导人民创造了改革开放和社会主义现代化建设的伟大成就。中国特色社会主义进入新时代，党从新的实际出发，坚持“两个结合”，创立习近平新时代中国特色社会主义思想，领导人民创造了新时代中国特色主义的伟大成就。\n（2）马克思主义中国化的三次飞跃：马克思主义中国化的飞跃是一脉相承而又与时俱进的。新民主主义革命、社会主义革命和建设时期创立并不断发展的毛泽东思想是马克思列宁主义在中国的创造性运用和发展，是被实践证明了的关于中国革命和建设的正确的理论原则和经验总结，是马克思主义中国化的第一次历史性飞跃；改革开放和现代化建设时期，形成的包括邓小平理论、“三个代表”重要思想和科学发展观在内的中国特色社会主义理论体系，实现了马克思主义中国化新的飞跃；党的十八大以来创立并不断发展的习近平新时代中国特色社会主义思想是当代中国马克思主义、二十一世纪马克思主义，是中华文化和中国精神的时代精华，实现了马克思主义中国化新的飞跃。\n（3）习近平新时代中国特色社会主义思想实现了马克思主义中国化的新飞跃：中国特色社会主义进入新时代，世情国情党情发生了深刻变化。当今世界正经历百年未有之大变局，我国也正处于实现中华民族伟大复兴的关键时期，党面临许多前所未有的新情况、新问题、新挑战（背景）。以习近平同志为主要代表的中国共产党人，统筹把握两个大局，坚持“两个结合”，即坚持把马克思主义基本原理同中国具体实际相结合、同中华优秀传统文化相结合，坚持毛泽东思想、邓小平理论、“三个代表”重要思想、科学发展观，深刻总结并充分运用党成立以来的历史经验，从新的实际出发，创立了习近平新时代中国特色社会主义思想（两个结合）。习近平新时代中国特色社会主义思想提出了一系列原创性的治国理政新理念新思想新战略，实现了对中国特色社会主义建设规律认识的新跃升，是当代中国马克思主义、二十一世纪马克思主义，是中华文化和中国精神的时代精华，实现了马克思主义中国化新的飞跃（原创贡献、规律认识跃升、新飞跃）。\n（4）如何理解“两个结合”：我们党之所以能够取得百年奋斗的伟大成就，根本在于坚持把马克思主义基本原理同中国具体实际相结合、同中华优秀传统文化相结合，根据变化着的实际，不断推进理论创新，用马克思主义中国化最新成果指导新的伟大实践。在带领中国人民进行革命、建设、改革的长期历史实践中，中国共产党人始终坚持以马克思主义为指导，始终是中华优秀传统文化的忠实继承者和弘扬者。正是因为始终坚持把马克思主义基本原理同中国具体实际相结合，坚持将马克思主义基本原理同中华优秀传统文化相结合，我们党团结带领人民取得了革命、建设、改革的伟大成就\n（5）“两个确立”的伟大意义：实践充分证明，党确立习近平同志党中央的核心、全党的核心地位，确立习近平新时代中国特色社会主义思想的指导地位，反映了全党全军全国各族人民共同的心愿，对新时代党和国家事业发展、对推进中华民族伟大复兴历史进程具有决定性意义。“两个确立”反映了全党全军全国各族人民共同心愿，必将为实现中华民族伟大复兴提供更为坚强的政治保证；“两个确立”体现了我们党在指导思想上的与时俱进，必将为实现中华民族伟大复兴提供更为强大的思想指引；“两个确立”展现了我们党推进新时代党和人民事业伟大实践的历史担当，必将为实现中华民族伟大复兴汇聚更为磅礴的奋进力量；“两个确立”宣示了我们党牢记初心使命、永葆生机活力的坚定决心，必将为实现中华民族伟大复兴提供更为强大的组织优势。</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di26}}" class="whiteblock">
+            <view class="headline">新发展阶段</view>
+            <view class="left_right_gap">
+                <text class="content">（1）是什么：全面建成小康社会、实现第一个百年奋斗目标之后，我们乘势而上开启全面建设社会主义现代化国家新征程，向第二个百年奋斗目标进军，这标志着我国进入了一个新发展阶段。新发展阶段是社会主义初级阶段中的一个阶段，同时是其中经过几十年积累、站到了新的起点上的一个阶段。新发展阶段是我们党带领人民迎来从站起来、富起来到强起来历史性跨越的新阶段。新发展阶段是我国社会主义发展进程中的一个重要阶段。\n（2）为什么：进入新发展阶段，是以习近平同志为核心的党中央科学分析社会主义初级阶段基本特征、深刻把握国内国际发展大势做出的战略判断，有着深刻的理论依据、历史依据、现实依据。第一，从理论上看，马克思主义是远大理想和现实目标相结合、历史必然性和发展阶段性相统一的统一论者。发展社会主义不仅是一个长期历史过程，而且是需要划分为不同历史阶段的过程。第二，从历史依据来看，新发展阶段是我们党带领人民迎来从站起来、富起来到强起来历史性跨越的新阶段。第三，就现实依据来讲，我们已经拥有开启新征程、实现新的更高目标的雄厚物质基础。特别是全面建成小康社会取得伟大历史成果，解决困扰中华民族几千年的绝对贫困问题取得历史性成就。这在我国社会主义现代化建设进程中具有里程碑的意义，为我国进入新发展阶段、朝着第二个百年奋斗目标进军奠定了坚实基础。\n\n</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di27}}" class="whiteblock">
+            <view class="headline">新发展理念</view>
+            <view class="left_right_gap">
+                <text class="content">（1）是什么：创新、协调、绿色、开放、共享的新发展理念，是一个系统的理论体系。\n（2）为什么：新发展理念是针对我国经济发展进入新常态、世界经济复苏乏力形势提出的治本之策；是针对当前我国发展面临的突出问题和挑战提出的战略指引。新发展理念集中体现了我国发展思路、发展方向、发展着力点。具有很强的战略性、纲领性、引领性。进入新发展阶段，只有完整、准确、全面贯彻新发展理念，才能更好地引领我国发展全局深刻变革，进一步转变发展方式、优化经济结构、转换增长动力，推动我国经济实现高质量发展。\n\n</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di28}}" class="whiteblock">
+            <view class="headline">构建新发展格局</view>
+            <view class="left_right_gap">
+                <text class="content">（1）是什么：要构建以国内大循环为主体、国内国际双循环相互促进的新发展格局。\n（2）为什么：构建新发展格局，是与时俱进提升我国经济发展水平的战略抉择，也是塑造我国国际经济合作和竞争新优势的战略抉择；是把握未来发展主动权的战略布局和先手棋，是新发展阶段要着力推动完成的重大历史任务，也是贯彻新发展理念的重大举措。加快构建新发展格局，是根据新发展阶段、新历史任务、新环境条件作出的重大战略决策，对于抓住和用好重要战略机遇期，乘势而上、化危为机具有重大意义。\n（3）怎么做：构建新发展格局，第一，扭住扩大内需战略基点，畅通国民经济循环。第二，大力推动科技创新，打造经济发展新功能。第三，发挥全面深化改革在构建新发展格局中的关键作用。\n（4）必须处理好的一个关系：构建新发展格局必须深刻把握国内国际双循环促进的关系。新发展格局不是封闭的国内循环，而是开放的国内国际双循环。构建新发展格局，实现高水平对外开放，必须具备强大的国内经济循环体系和稳固的基本盘。但构建新发展格局绝不意味着对外开放地位的下降，而是要进一步敞开开放的大门，实现国内国际双循环的相互促进。要了立足于国内大循环，强化国内大循环的主导作用，以国际循环提升国内大循环效率和水平，从而为中国经济发展开辟空间，促进同各国互利共赢、共同繁荣发展，为世界经济复苏和增长增添动力。\n\n</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di29}}" class="whiteblock">
+            <view class="headline">推动高质量发展</view>
+            <view class="left_right_gap">
+                <text class="content">（1）是什么：我国经济发展已由高速增长阶段转向高质量阶段。新时代必须坚持新发展理念（创新、协调、绿色、开放、共享），在质量和效益明显提升的基础上实现经济持续健康发展，也就是高质量发展。\n（2）为什么：第一，经济社会发展要以推动高质量发展为主题，这是根据我国发展阶段、发展环境、发展条件变化作出的科学判断。第二，推动高质量发展是保持经济持续健康发展的必然要求。第三，推动高质量发展是适应我国社会主要矛盾变化、全面建设社会主义现代化的必然选择。第四，推动高质量发展是遵循经济规律发展的内在要求。\n（3）怎么做：深化供给侧结构改革是推动高质量发展的主线。当前和今后一个时期，我国经济发展面临的问题，供给和需求两侧都有，但矛盾的主要方面在供给侧。必须从供给侧发力，把改善供给侧结构作为主攻方向，实现由低水平供需平衡向高水平供需平衡跃升。\n\n</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di30}}" class="whiteblock">
+            <view class="headline">建设现代化经济体系</view>
+            <view class="left_right_gap">
+                <text class="content">（1）为什么：贯彻习近平新时代中国特色主义经济思想，就要着力建设现代化经济体系，实现高质量发展。建设现代化经济体系是我国发展的战略目标，更是更好顺序现代化发展潮流和赢得国际竞争主动的要求，能为其他领域现代化提供有力支撑。\n（2）怎么做：大力发展实体经济，筑牢现代化经济体系的坚实基础。必须把发展经济的着力点放在实体经济上，把提高供给体系质量作为主攻方向，显著增强我国经济质量优势。第二，加快实施创新驱动发展战略，强化现代化经济体系的战略支撑。倡导创新文化，强化知识产权保护，提升大众创业、万众创新水平。第三，实施乡村振兴战略，夯实现代化经济体系的重要基础。第四，优化国土空间布局，推进区域协调发展和新型城镇化。第五，着力发展开发型经济，提高现代化经济体系的国际竞争力。第六，深化经济体制改革，完善现代化经济体系的制度保障。\n\n</text>
+            </view>
+        </view>
+
+        <view hidden="{{di31}}" class="whiteblock">
+            <view class="headline">创新</view>
+            <view class="left_right_gap">
+                <text class="content">（1）为什么：创新是引领发展的第一动力，是建设现代化经济体系的战略支撑。坚持创新发展，是应对环境变化、增强发展动力、把握发展主动权，更好引领新常态的根本之策。抓住了创新，就抓住了牵动经济社会发展全局的关键。强大的科技实力和创新能力，为全面建设社会主义现代化国家提供了战略支撑。实现高水平的自立自强，即使构建新发展格局的最本质特征，也是中国特色自主创新道路与时俱进的最新要求。\n\n（2）怎么做：要实施创新驱动发展战略，树立强烈的创新自信，坚定不移地走中国特色自主创新道路。把创新摆在国家发展全局的核心位置，不断推进理论创新、制度创新、科技创新、文化创新等各方面的创新，让创新贯穿党和国家的一切工作。坚持自主创新、重点跨越、支撑发展、引领未来的方针，把重要领域的科技创新摆在更加突出的地位。\n\n</text>
+            </view>
+        </view>
+
+        <view hidden="{{di32}}" class="whiteblock">
+            <view class="headline">处理好政府与市场的关系</view>
+            <view class="left_right_gap">
+                <text class="content">（1）为什么：社会主义市场经济理论和改革开放以来的实践证明，市场配置资源是最有效的形式。公有制经济和非公有制经济都是社会主义市场经济的重要组成部分，都是我国经济社会发展的重要基础，对于社会主义生产力、综合国力和人民生活水平的提升具有重大促进作用。任何想把公有制或非公有制经济否定掉的观点，都是不符合我国改革发展要求和人民根本利益的。\n\n（2）如何处理政府与市场的关系：市场决定资源配置是市场经济的一般规律，市场经济本质上就是市场决定资源配置的经济。健全社会主义市场经济体制必须遵循这条规律，着力解决市场体系不完善、政府干预过多和监管不到位问题。市场在资源配置中起决定性作用，并不是起全部作用。我国实行的是社会主义市场经济体制，仍然要坚持发挥社会主义制度的优越性、发挥党和政府的积极作用。使市场在资源配置中起决定性作用、更好发挥政府作用，二者是有机统一的，不是互相否定的，不能把二者割裂开来、对立起来。坚持和完善社会主义基本经济制度，充分发挥市场在资源配置中的决定性作用，更好发挥政府作用，推动有效市场和有为政府更好的结合。\n\n（3）具体处理要求：无论是使市场在资源配置中起决定性作用，还是更好发挥政府作用，都必须坚持和完善我国社会主义基本经济制度。第一，激发各类市场主体活力。要毫不动摇地坚持我国基本经济制度，必须毫不动摇地巩固和发展公有制经济，坚持公有制经济主体地位，发挥国有经济主导作用；必须毫不动摇地鼓励、支持和引导非公有制经济发展，激发非公有制经济的活力和创造力。（两个毫不动摇）第二，坚持按劳分配为主体、多种分配方式并存。第三，完善宏观经济治理。第四，建设高标准市场体系。第五，加快转变政府职能。\n\n</text>
+            </view>
+        </view>
+
+        <view hidden="{{di33}}" class="whiteblock">
+            <view class="headline">全面深化改革</view>
+            <view class="left_right_gap">
+                <text class="content">（1）为什么：改革是社会主义制度地自我完善和发展，是中国人民和中华民族发展史上一次伟大革命，推动了中国特色社会主义事业的伟大飞跃。改革开放是决定当代中国命运的关键一招，也是决定实现“两个一百年”奋斗目标、实现中华民族伟大复兴的关键一招。全面深化改革，关系党和人民事业前途命运，关系党的执政基础和执政地位，是解决中国现实问题的根本途径。改革只有进行时，没有完成时。改革既不可能一蹴而就，也不可能一劳永逸，要以更大的政治勇气和决心坚持全面深化改革。\n\n（2）怎么做：第一，坚持党对改革的集中统一领导。在党的领导下紧紧依靠人民推动改革开放。第二，坚持改革沿着中国特色社会主义前进。不论怎么改革、怎么开放，都要始终坚持中国特色社会主义道路、中国特色社会主义理论体系、中国特设社会主义制度的方向前进。第四，坚持社会主义市场经济改革方向。这不仅是经济体制改革的基本遵循，也是全面深化改革的重要依托。\n\n</text>
+            </view>
+        </view>
+
+        <view hidden="{{di34}}" class="whiteblock">
+            <view class="headline">开放型经济与全面对外开发</view>
+            <view class="left_right_gap">
+                <text class="content">（1）为什么：开放也是改革，全面开放是实现国家繁荣富强的根本出路。不断扩大对外开放、提高对外开放水平，以开放促改革、促发展，是我国发展不断取得新成就的重要法宝。从国际上看，经济全球化深入发展，加快融合发展促进共同繁荣发展的必然选择；从国内来看，对外开放是国家繁荣发展的必由之路，是推动我国经济社会发展的重要动力。\n\n（2）怎么做：第一，实行更加积极主动的开放战略，完善互利共赢，多元平衡、安全高效的开放型经济体系。第二，坚持主动开放、全面开放、公平开放、共赢开放和包容开放，以开放促改革、促发展。第三，建设更高水平开放型经济体制，全面提高对外开放水平。\n\n</text>
+            </view>
+        </view>
+
+        <view hidden="{{di35}}" class="whiteblock">
+            <view class="headline">人民代表大会制度</view>
+            <view class="left_right_gap">
+                <text class="content">（1）是什么：全国人民代表大会是我国最高国家权力机关。人民代表大会制度是坚持党的领导、人民当家做主、依法治国有机统一的根本制度安排，是符合中国国情、体现中国社会主义国家性质、能够保证中国人民当家作主的根本政治制度和最高实现形式，也是党在国家政权中充分发扬民主、贯彻群众路线的最好实现形式，是中国社会主义政治文明的重要制度载体。\n\n（2）怎么做：要支持和保证人民通过人民代表大会行使国家权力，发挥人大及其常委会在立法工作的主导作用，健全人大组织制度和工作制度。必须坚持党的全面领导，必须保证和发展人民当家作主，从各层次各领域扩大公民有序参与，保证人民依法享有监督权、表达权、建议权等。必须坚持全面依法治国，坚持科学立法、民主立法，使民主制度化，法律化。\n\n</text>
+            </view>
+        </view>
+
+        <view hidden="{{di36}}" class="whiteblock">
+            <view class="headline">政治协商制度</view>
+            <view class="left_right_gap">
+                <text class="content">（1）是什么：中国共产党领导的多党合作和政治协商制度是我国的一项基本政治制度，是中国共产党领导各民主党派、无党派人士、人民团体和各族各界人士在政治制度上进行的伟大创作。中国共产党领导的多党合作和政治协商制度是中国特色社会主义事业的重要内容。在这一制度中，中国共产党的领导是首要前提和根本保证，多党合作是核心内容。中国共产党是执政党，民主党派是参政党，中国共产党和各民主党派有着共同的根本利益和共同的目标。\n\n（2）怎么做：中国人民政治协商会议的主要职能是政治协商、民主监督、参政议政。人民政协是具有中国特色的制度安排，是社会主义协商民主的重要渠道和专门协商机构，也是爱国统一战线组织。人民政协要聚焦党和国家中心任务，围绕团结和民主两大主题，发扬和完善协商民主的内容与形式，重点监督党和国家重大方针政策和决策部署的贯彻落实。</text>
+            </view>
+        </view>
+
+        <view hidden="{{di37}}" class="whiteblock">
+            <view class="headline">民族区域自治制度</view>
+            <view class="left_right_gap">
+                <text class="content">（1）是什么：民族地区经济社会的发展，关系到国家稳定、边疆安全和中国民族伟大复兴的中国梦的实现。全面建成小康社会和建设社会主义现代化强国，离不开少数民族和民族地区的全面小康。实践证明，民族区域自治制度符合我国国情，有利于维护国家统一和民族团结，有利于保证少数民族地区人民当家作主，促进民族地区发展和凝聚力增强。\n\n（2）怎么做：要坚持民族平等、民族团结和各民族共同繁荣的基本原则，要维护和发展各民族的和谐、平等、团结、互助关系。要坚持统一与自治相结合，民族因素与区域因素相结合，帮助民族自治地方发展经济、改善民生。\n\n</text>
+            </view>
+        </view>
+
+        <view hidden="{{di38}}" class="whiteblock">
+            <view class="headline">基层群众自治制度</view>
+            <view class="left_right_gap">
+                <text class="content">（1）为什么：基层群众自治制度是中国的一项基本政治制度，是社会主义民主政治建设的基础和重要组成部分，是社会主义民主广泛而深刻的实践。广大人民在城乡基层群众性自治组织中，依法直接行使民主权利，实行民主自治，已经成为当代中国最直接、最广泛的民主实践。\n\n（2）怎么做：必须发挥党总揽全局、协调各方的领导核心作用，把党的领导贯穿基层自治机制建设全过程、各方面；要畅通民主渠道，健全基层选举、议事、公开、述职、问责等机制，促进群众在基层事业中自我管理、自我服务、自我教育、自我监督，切实发扬社会民主。\n\n</text>
+            </view>
+        </view>
+
+        <view hidden="{{di39}}" class="whiteblock">
+            <view class="headline">社会主义民主</view>
+            <view class="left_right_gap">
+                <text class="content">（1）为什么：人民当家作主是社会主义民主政治的本质特征。我国社会主义民主维护人民根本利益的最广泛、最真实、最管用的民主。发展社会主义民主政治就是要体现人民意志、保障人民权益、激发人民创造活力，用制度体系保证人民当家作主。\n\n（2）怎么做：要坚持党的领导、人民当家作主、依法治国有机统一。要改善党的领导，扩大公民有序参与，保障人民依法享有知情权、参与权、表达权、监督权。要深化依法治国实践，推进科学立法、严格执法、公正司法、全民守法。\n\n</text>
+            </view>
+        </view>
+
+        <view hidden="{{di40}}" class="whiteblock">
+            <view class="headline">社会主义协商民主</view>
+            <view class="left_right_gap">
+                <text class="content">（1）为什么：社会主义协商民主是中国特色社会主义民主政治的特有形式和独特优势，是切实保障人民当家作主的制度安排，具有不可比拟的优越性和强大生命力。社会主义协商民主是在党的领导下，人民内部各方面围绕改革发展稳定的重大问题和涉及群众切身利益的实际问题，在决策之前和决策实施之中开展广泛协商，努力形成共识的重要民主形式。它丰富了民主形式，拓展了民主渠道，深化了民主内涵，具有深厚的文化基础、理论基础、实践基础和制度基础。\n\n（2）怎么做：发扬社会主义协商民主作为我国社会主义民主政治的特有形式和独特优势，就要推动协商民主广泛、多层、制度化发展。首先，要加强党的领导。党的领导是中国特色社会主义最本质的特征，也是社会主义协商民主健康有序发展的根本保证。其次，要充分发挥人民政协作为社会主义协商民主的重要渠道和专门协商机构的作用，将协商民主贯穿于人民政协开展政治协商、民主监督、参政议政的全过程。\n\n</text>
+            </view>
+        </view>
+
+        <view hidden="{{di41}}" class="whiteblock">
+            <view class="headline">全过程人民民主</view>
+            <view class="left_right_gap">
+                <text class="content">（1）为什么：全过程人民民主，是人民当家作主的生动实践和必由之路。全过程人民民主，主体是“人民”，内容是“民主”，参与程度是“全过程”。我国全过程人民民主不仅有完整的制度程序，而且有完整的参与实践。实现了过程民主和成果民主、程序民主和实质民主、直接民主和间接民主、人民民主和国家意志相统一，是全链条、全方位、全覆盖的民主。是最广泛、最真实、最管用的社会主义民主。\n\n（2）怎么做：人民代表大会制度是实现我国全过程人民民主的重要制度载体。要在党的领导下，不断扩大人民有序参与，加强人权法治保障，保证人民依法享有广泛权力和自由。要保证人民依法形式选举权利，民主选举产生人大代表，保证人民的知情权、参与权、表达权、监督权落实到人大工作各方面各环节全过程，确保党和国家在决策、执行、监督落实各个环节都能听到来自人民的声音。\n\n</text>
+            </view>
+        </view>
+
+        <view hidden="{{di42}}" class="whiteblock">
+            <view class="headline">全面依法治国</view>
+            <view class="left_right_gap">
+                <text class="content">（1）为什么：法律是治国之重器，良法是善治之前提。全面依法治国是关系我们党执政兴国、人民幸福安康、党和国家长治久安的重大战略问题，是“四个全面”战略布局的重要组成部分。\n\n（2）怎么做：第一，走中国特设社会主义法治道路。坚持党的全面领导，坚持中国特设社会主义制度，贯彻中国特设社会主义法治理论。坚持人民在全面依法治国中的主体地位。坚持法律面前人人平等。坚持依法治国和以德治国相结合。第二，必须坚持厉行法治，推进科学立法、严格执法、公正司法、全民守法，推进中国特设社会主义法治体系建设，全面深化依法治国实践。\n\n</text>
+            </view>
+        </view>
+
+        <view hidden="{{di43}}" class="whiteblock">
+            <view class="headline">文化强国与文化自信</view>
+            <view class="left_right_gap">
+                <text class="content">（1）为什么：文化是一个国家、一个民族的灵魂。文化自信是一个国家、一个民族发展中更基本、更深层、更持久的力量。独特的文化传统，独特的历史命运，独特的基本国情，注定了我们必然要走适合自己特点的发展道路。中国特设社会主义文化发展道路，揭示了我国文化发展规律，是推动社会主义文化繁荣兴盛的唯一正确道路。当今时代，文化在综合国力竞争中的地位日益重要，谁占据了文化发展的制高点，谁就能更好地在激烈的国际竞争中掌握主动权。\n\n（2）怎么做：建设社会主义文化强国，必须培养高度的文化自信，必须大力发展文化事业和文化产业，坚持要把社会效益放在首位、社会效益和经济效益相统一，不断提高国家文化软实力。同时必须坚持远大理想和共同理想，培育和践行社会主义核心价值观，不断增强意识形态领域的主导权和话语权，推动中华优秀传统文化创造性转化、创新性发展，发展中国特色社会主义文化，加强社会主义精神文明建设，激发全民族文化创新创造活力，建设社会主义文化强国。\n\n</text>
+            </view>
+        </view>
+
+        <view hidden="{{di44}}" class="whiteblock">
+            <view class="headline">社会治理</view>
+            <view class="left_right_gap">
+                <text class="content">（1）为什么：社会治理是国家治理的重要领域，社会治理现代化是国家治理体系和治理能力现代化的题中应有之义。当前我国处于改革攻坚期深水区，社会管理领域面临一系列新情况和新问题，迫切需要通过深化改革，实现从传统社会管理向现代化社会治理转变。\n\n（2）怎么做：必须创新社会治理理念，必须创新社会治理体系，打造共建共治共享的社会治理格局，推进社会治理精细化，激发社会活力。要不断改进社会治理方式，推动社会治理重心向基层下移。\n\n</text>
+            </view>
+        </view>
+
+        <view hidden="{{di45}}" class="whiteblock">
+            <view class="headline">生态文明与美丽中国</view>
+            <view class="left_right_gap">
+                <text class="content">（1）为什么：生态环境是人类生存和发展的根基，生态环境变化直接影响文明兴衰演替。建设生态文明是关系人民福祉、关乎中华民族永续发展的千年大计，是实现中华民族伟大复兴的重要战略任务。人与自然是生命共同体。绿色是生命的象征、大自然的底色。改善生态环境就是发展生产力，生态环境问题归根到底是经济发展方式问题。\n\n（2）怎么做：实现这样的根本性改革，必须践行绿水青山就是金山银山的理念，坚持节约资源和环境保护的基本国策，坚持节约优先、保护优先、自然恢复为主的方针，坚定走生产发展、生活富裕、生态良好的文明发展道路，建设美丽中国。必须深化生态文明体制改革，建立健全以治理体系和治理能力现代化为保障的生态文明制度体系，以生态系统良性循环和环境风险有效防控为重点的生态安全体系。实行最严格的生态环境保护制度。全面建立资源高效利用制度。健全生态保护和修复制度。严明生态环境保护责任制度。\n\n</text>
+            </view>
+        </view>
+
+        <view hidden="{{di46}}" class="whiteblock">
+            <view class="headline">全面建设社会主义现代化国家</view>
+            <view class="left_right_gap">
+                <text class="content">（1）全面建成小康社会的成就：第一，经过全党全国各族人民共同努力，我国脱贫攻坚战取得了全面胜利，现行标准下农村贫困人口全部脱贫，区域性整体贫困得到解决，完成了消除绝对贫困的艰巨任务，这不仅创造了又一个彪炳史册的人间奇迹，也为实现全面建成小康社会目标任务做出了关键性贡献。第二，改革开发以来，我们党全国人民创造了世所罕见经济快速发展奇迹和社会长期稳定奇迹。这两大奇迹的集中体现就是在建党一百周年之际，如期实现全面建成小康社会伟大目标。如期全面建成小康社会、实现第一个百年奋斗目标，为开启全面建设社会主义现代化国家新征程奠定坚实基础。\n\n（2）我国社会主义现代化的内涵与特征：新中国成立以来特别是改革开放以来，我国用几十年的时间，在发展的很多方面走过了西方发达国家上百年甚至数百年的发展历程。中国式现代化是社会主义现代化，是独具特色、有别于资本主义的现代化。打破了只有遵循资本主义现代化模式才能实现现代化的神话，克服了资本主义现代化所固有的弊端，提供了现代化的全新选择，开辟了后发国家走向现代化的崭新道路，展现了人类社会现代化的光明前景（内涵）。中国的现代化是人口规模巨大的现代化，是全体人民共同富裕的现代化，是物质文明和精神文明相协调的现代化，是人与自然和谐共生的现代化，也是走和平发展道路的现代化（5个特征）\n\n</text>
+            </view>
+        </view>
+
+        <view hidden="{{di47}}" class="whiteblock">
+            <view class="headline">乡村振兴</view>
+            <view class="left_right_gap">
+                <text class="content">（1）为什么：第一，实施乡村振兴战略，是解决新时代我国社会主要矛盾、实现“两哥一百年”奋斗目标和中华民族伟大复兴中国梦的必然要求。第二，全面建设社会主义现代化国家，实现中华民族伟大复兴，最艰巨最繁重的任务依然在农村，最广泛最深厚的基础依然在农村。实施乡村振兴战略是立足新发展阶段、贯彻新发展理念、构建新发展格局提出的必然要求。第三，部分脱贫群众基础还不牢固，存在致贫返贫风险。因而必须切实做好巩固拓展脱贫攻坚成果同乡村振兴有效衔接的各项工作，全面实施乡村振兴战略，才能让脱贫基础更加巩固、成效更可持续。\n\n（2）怎么做：第一，提高农业质量效益和竞争力。适应确保国计民生要求，以保障国家粮食安全为底线，健全农业支持保护制度。第二，实施乡村建设行动。把乡村建设摆在社会主义现代化建设的重要位置。第三，深化农村改革。第四，实现巩固拓展脱贫攻坚成果同乡村振兴有效衔接。第五，必须加强顶层设计，以更有力的举措、汇聚更强大的力量来推进。坚持把解决好“三农”问题作为全党工作重中之重，走中国特色社会主义乡村振兴道路，全面实施乡村振兴战略，强化以工补农、以城带乡，推动形成工农互促、城乡互补、协调发展、共同繁荣的新型工农城乡关系，加快农业农村现代化。\n\n</text>
+            </view>
+        </view>
+
+        <view hidden="{{di48}}" class="whiteblock">
+            <view class="headline">党自我革命、党的领导</view>
+            <view class="left_right_gap">
+                <text class="content">跳出历史周期律就是要让人民来监督。党的领导是中国特色社会主义最本质的特征，是中国特色社会主义制度最大的优势，是党和国家事业发展的根本所在、命脉所系。勇于自我革命是中国共产党最鲜明的品格，也是党区别于其他一切政党的最显著标志。中国共产党在领导革命、建设、改革的过程中，始终坚持不移推进党的自我革命，坚持真理、修正错误，党的领导能力和执政能力不断增强，努力把党建设成为始终走在时代前列、人民衷心拥护、用于自我革命、经受起各种风浪考验、朝气蓬勃的马克思主义执政党。中国共产党人要始终以“赶考”的心态，把人民作为工作的最高裁决者和在最终评判者，跳出历史周期律，通过长期执政守护好人民的江山。\n\n</text>
+            </view>
+        </view>
+
+        <view hidden="{{di49}}" class="whiteblock">
+            <view class="headline">中国特色社会主义道路和方向</view>
+            <view class="left_right_gap">
+                <text class="content">实践充分证明，中国特色社会主义道路是实现民族复兴之路、国家富强之路、人民幸福之路。中国特色社会主义道路是实现社会主义现代化、创造人民美好生活的必由之路；中国特设社会主义理论体系是指导党和人民实现民族复兴的正确理论；中国特色社会主义制度是当代中国发展进步的根本制度保障；中国特色社会主义文化是激励全党全国各族人民奋勇前进的强大精神力量。我们将继续坚持和发展中国特色社会主义，更自觉地增强“四个自信”，昂首阔步走中国特设社会主义道路，向着全面建成社会主义现代化强国、实现中华民族伟大复兴地宏伟目标继续奋进。\n\n</text>
+            </view>
+        </view>
+
+        <view hidden="{{di50}}" class="whiteblock">
+            <view class="headline">民族复兴的主题</view>
+            <view class="left_right_gap">
+                <text class="content">鸦片战争以来，随着资本-帝国主义的入侵，独立的中国逐渐成为了半殖民地半封建社会，近代中国的两大主要矛盾是帝国主义和中华民族的矛盾，封建主义和人民大众的矛盾；近代中国社会的两大历史任务是争取民族独立、人民解放、国家富强、人民富裕。随着民族矛盾的日益加剧，封建君主制度已经成为阻碍民族独立、人民解放的巨大障碍，因此，只有革命才是结束半殖民地半封建社会国情和人民悲惨命运的唯一出路。\n\n</text>
+            </view>
+        </view>
+
+        <view hidden="{{di51}}" class="whiteblock">
+            <view class="headline">过去的失败</view>
+            <view class="left_right_gap">
+                <text class="content">近代包括普通民众、先进地主阶级、民族资产阶级在内的中华民族为实现民族复兴进行了艰辛探索和不屈不挠的斗争，然而不触动封建根基的自强运动、改良主义、旧式的农民战争和照搬西方的种种方案都失败了。只有中国共产党才能运用科学先进的马克思主义理论，不断将马克思主义中国化，最终领导人民完成革命、建设、改革的历史人物，逐步实现中华民族的伟大复兴。</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di52}}" class="whiteblock">
+            <view class="headline">党成立以来的伟大历史贡献</view>
+            <view class="left_right_gap">
+                <text class="content">一百年来，党领导人民创造了新民主主义革命的伟大成就，为实现中华民族伟大复兴创造了根本社会条件；创造了社会主义革命和建设的伟大成就，为实现中华民族伟大复兴奠定根本政治前提和制度基础；创造了改革开放和社会主义现代化建设的伟大成就，推进了中华民族从站起来到富起来的伟大飞跃；创造了新时代中国特设社会主义的伟大成就，为实现中华民族伟大复兴提供了更为完善的制度保证、更为坚实的物质基础、更为主动的精神力量，中国民族迎来了从站起来、富起来到强起来的伟大飞跃。\n\n</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di53}}" class="whiteblock">
+            <view class="headline">革命、建设、改革</view>
+            <view class="left_right_gap">
+                <text class="content">（1）革命（新中国成立的意义）：新中国的成立，宣告中国人民当家做主的时代已经到来，中国历史由此开辟了一个新纪元。以毛泽东同志为主要代表的中国共产党人将马克思主义中国化，创立了第一个理论成果即毛泽东思想。为了实现中华民族伟大复兴，在毛泽东思想指导下，中国共产党团结带领中国人民，浴血奋战、百折不挠，推翻了帝国主义、封建主义、官僚资本主义的三座大山，创造了新民主主义革命的伟大成就。新民主主义革命的胜利，彻底结束了旧中国半殖民地半封建社会的历史，彻底结束了旧中国一盘散沙的局面，彻底废除了列强强加给中国的不平等条约和帝国主义在中国的一切特权，为实现中华民族伟大复兴创造了根本社会条件。\n\n（2）建设（社会主义制度确立的意义）：为了实现中华民族伟大复兴，中国共产党团结带领中国人民，自力更生、发奋图强，创造了社会主义革命和建设的伟大成就。我们进行社会主义革命，消灭在中国延续几千年的封建剥削压迫制度，确立社会主义基本制度，推进社会主义建设，战胜帝国主义、霸权主义的颠覆破坏和武装挑衅，实现了中华民族有史以来最为广泛而深刻的社会变革，实现了一穷二白、人口众多的东方大国大步迈进社会主义社会的伟大飞跃，为实现中华民族伟大复兴奠定了根本政治前提和制度基础。中国共产党和中国人民以英勇顽强的奋斗向世界庄严宣告，中国人民不但善于破坏一个旧世界、也善于建设一个新世界，只有社会主义才能救中国，只有中国特设社会主义才能发展中国。\n\n（3）改革（改革开放的意义）：党的十一届三中全会之后，我国进入了改革开放和社会主义现代化建设的新时期。为了实现中华民族伟大复兴，中国共产党团结带领人民，解放思想、锐意进取，创造了改革开发和社会主义现代化建设的伟大成就。我们实现新中国成立以来党的历史上具有深远意义的伟大转折，确立党在社会主义初级阶段的基本路线，坚定不移推进改革开放，实现了从高度集中的计划经济体制到充满活力的社会主义市场经济体制、从封闭半封闭到全方位开放的历史性转变，实现了从生产力相对落后的状况到经济总量跃居世界第二的历史性突破，实现了人民生活从温饱不足到总体小康、奔向全面小康的历史性跨越，为实现中华民族伟大复兴提供了充满新的活力的体制保证和快速发展的物质条件。</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di54}}" class="whiteblock">
+            <view class="headline">新时代</view>
+            <view class="left_right_gap">
+                <text class="content">党的十八大以来，中国特色社会主义进入新时代。党领导人民自信自强、守正创新，创造了新时代中国特色社会主义的伟大成就，为实现中华民族伟大复兴提供了更为完善的制度保证、更为坚实的物质基础、更为主动的精神力量；习近平新时代中国特色社会主义思想是当代中国马克思主义、21世纪马克思主义，是中华文化和中国精神的时代精华，实现了马克思主义中国化新的飞跃。党确立习近平同志党中央的核心、全党的核心地位，确立习近平新时代中国特色社会主义思想的指导地位，反映了全党全军各国各族人民的共同心愿，对新时代党和国家事业发展、对推进中华民族伟大复兴历史进程具有决定性意义。\n\n</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di55}}" class="whiteblock">
+            <view class="headline">党百年奋斗的意义</view>
+            <view class="left_right_gap">
+                <text class="content">党的百年奋斗从根本上改变了中国人民的前途命运；开辟了实现中华民族伟大复兴的正确道路；展示了马克思主义的强大生命力；深刻影响了世界历史进程；锻造了走在时代前列的中国共产党，形成了以伟大建党精神为源头的精神谱系。这五条概括，既立足中华大地，又放眼人类未来，体现了中国共产党和中国人民、中华民族的关系，体现了中国共产党和马克思主义、世界社会主义、人类社会发展的关系，贯通了中国共产党百年奋斗的历史逻辑、理论逻辑、实践逻辑。\n\n</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di56}}" class="whiteblock">
+            <view class="headline">党百年奋斗的历史经验</view>
+            <view class="left_right_gap">
+                <text class="content">坚持党的领导、坚持人民至上、坚持理论创新、坚持独立自主、坚持中国道路、坚持胸怀天下、坚持开拓创新、坚持敢于斗争、坚持统一战线、坚持自我革命等十个方面，是我们党百年奋斗的历史经验，揭示了我们党不断从胜利走向新的胜利的“成功密码”。这十条历史经验是系统完整、相互贯通的有机整体，揭示了党和人民事业不断成功的根本保证，揭示了党始终立于不败之地的力量源泉，揭示了党始终掌握历史主动的根本原因，揭示了党永保先进性和纯洁性、始终走在时代前列的根本途径。强调这十条历史经验是经过长期实践积累的宝贵经验，是党和人民共同创造的精神财富，必须倍加珍惜、长期坚持，并在新时代实践中不断丰富和发展。\n\n</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di57}}" class="whiteblock">
+            <view class="headline">辛亥革命</view>
+            <view class="left_right_gap">
+                <text class="content">（1）辛亥革命的“成功”与“失败”：\n\n（成功）推翻了清朝政府；结束了在中国延续几千年的君主专制制度；近代以来中国发生的深刻社会变革由此拉开了序幕；是中国人民和中国先进分子为实现民族独立、人民解放进行的一次伟大而艰辛探索；开创了完全意义上的近代民族民主革命。\n\n（失败）由于历史进程和社会条件的制约，由于没有找到解决中国前途命运问题的正确道路和领导力量，没有改变旧中国半殖民地半封建的社会性质和中国人民的悲惨境遇，没有完成实现民族独立、人民解放的历史任务。\n\n（2）辛亥革命永远是中华民族伟大复兴征程上一座巍然屹立的里程碑：孙中山先生是伟大的民族英雄、伟大的爱国主义者、中国民主革命的伟大先驱。在他领导下的辛亥革命，极大促进了中华民族的思想解放，传播了民主共和的理念，打开了中国进步潮流的闸门，撼动了反动统治秩序的根基，在中华大地上建立起亚洲第一个共和制国家，以巨大的震撼力和深刻的影响力推动了中国社会变革，为实现中华民族伟大复兴探索了道路。辛亥革命之后，中国人民和中国先进分子继续探索救国救民道路。在中国人民和中华民族的伟大觉醒中，在马克思列宁主义同中国工人运动的紧密结合中，中国共产党应运而生，这是开天辟地的大事变，实现中华民族伟大复兴的灯塔由此点亮。\n\n（3）中国共产党人是孙中山现实革命事业最坚定的支持者、最忠诚的合作者、最忠实的继承者：中国共产党在成立之初就提出反帝反封建的民主革命纲领，并同孙中山先生领导的中国国民党携手合作，帮助国民党完成改组，建立最广泛的革命统一战线，掀起轰轰烈烈的大革命，给北洋军阀反动统治以沉重打击（支持、合作）。孙中山先生逝世后，中国共产党人继承他的遗愿，同一切忠于他的事业的人们继续奋斗，不断实现和发展了孙中山先生和辛亥革命先驱的伟大抱负。\n\n</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di58}}" class="whiteblock">
+            <view class="headline">新文化运动</view>
+            <view class="left_right_gap">
+                <text class="content">新文化运动的倡导者们提倡民主和科学是切中时弊的。当封建主义还在政治和社会生活中占支配地位的时候，对于资产阶级民族主义的提倡，在客观上仍然具有震耳发聩的作用。新文化运动的倡导者们批判孔学，在社会上掀起了一股前所未有的空前深刻的思想解放的潮流。这股潮流冲决了禁锢人们思想的闸门。而这个闸门一被打开，各种新思潮的涌流就不仅不可避免，而且是无法遏制了。正是因为如此，在那时，这个运动是生动活泼的、前进的、革命的。</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di59}}" class="whiteblock">
+            <view class="headline">五四运动</view>
+            <view class="left_right_gap">
+                <text class="content">五四运动是中国新民主主义革命的开端。它是一场彻底反帝反封建的伟大爱国革命运动，是一场中国人民为拯救民族危亡而掀起的伟大社会革命运动，是一场传播新思想新文化新知识的伟大思想启蒙运动和新文化运动，以磅礴之力鼓动了中国人民和中华人民实现民族复兴的志向和信心。五四运动以全民族的行动激发了追求真理、追求进步的伟大觉醒，是自鸦片战争以来第一次全民啊觉醒。五四运动促进了马克思主义在中国的传播，促进了马克思主义同中国工人运动的结合，为中国共产党的成立作了思想上干部上的准备。因此，五四运动是中国旧民主主义革命走向新民主主义革命的转折点，在近代以来中华民族追求民族独立和发展进步的历史进程中具有里程碑意义。\n\n</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di60}}" class="whiteblock">
+            <view class="headline">中国共产党的成立</view>
+            <view class="left_right_gap">
+                <text class="content">（1）历史的必然：中国共产党的成立是中华民族发展史上一个开天辟地的大事变。中国共产党是中国近代历史发展的必然产物，是马克思主义同中国工人运动结合的产物。近代以来，无数仁人志士为改变中华民族的命运进行了艰辛探索，但旧民主主义革命的失败和其他种种照搬西方的方案，不能完成救亡图存的民族使命和反帝反封建的历史人物。因此中国革命必然呼唤新的领导力量与革命新道路的出现。第一次世界大战与俄国十月革命之后，马克思主义得以广泛传播，并不断与中国工人运动相结合，中国共产党应运而生。\n\n（2）伟大意义：自从有了中国共产党，中国革命有了先进的坚强的领导核心，从此有了科学的指导思想。党所提出的纲领和奋斗目标，代表着中国社会发展的正确方向，代表着中国无产阶级和其他广大劳动人民的根本利益。中国共产党的诞生，也使中国革命从此有了新的革命方法，并建立了中国革命和世界无产阶级革命之间的联系。中国共产党人的初心和使命，就是为中国人民谋幸福，为中华民族谋复兴。中国共产党的成立，深刻改变了近代以后中华民族发展的方向和进程，深刻改变了中国人民和中华民族的前途和命运，深刻改变了世界发展的趋势和格局。\n\n</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di61}}" class="whiteblock">
+            <view class="headline">十月革命与马克思主义中国化</view>
+            <view class="left_right_gap">
+                <text class="content">20世纪爆发的第一次世界大战充分保路了帝国主义国家侵略的实质，使得中国的知识分子对西方的资本主义方案产生怀疑与失望。十月革命爆发后，马克思主义作为一种救国的主义和信仰开始传入中国，给予中国人民新的革命方法和革命思想的启示。五四运动后的新文化运动中，马克思主义得以广泛传播并在思想领域日渐取得主导地位，中国人民在反复比较中最终选择了马克思主义。正式在马克思主义指导下，中国共产党将马克思主义同中国实际相结合，不断开辟马克思主义中国化的历史进程，最终领导中国人民取得了中国革命、建设、改革的成功，给中华民族复兴与人民的幸福带来了光明前景。</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di62}}" class="whiteblock">
+            <view class="headline">大革命与中国革命道路探索</view>
+            <view class="left_right_gap">
+                <text class="content">国民大革命作为一场反帝反封建的革命，基本推翻了北洋军阀的反动统治，沉重打击了帝国主义在华势力，为后来共产党领导的土地革命的开展奠定了群众基础，提搞了中国共产党在全国人民中的政治威望，发挥了党的政治优势和组织优势。中国共产党在大革命中起着独特的、不可替代的作用。没有中国共产党，就不会有这场大革命。但是大革命没有完成反帝反封建的民主革命任务，没有结束半殖民地半封建社会的国情。因此，大革命失败了。所以，中国革命必须建立最广泛的革命统一战线，巩固工农联盟，坚持武装斗争，坚持党的领导，并不断加强党的建设，将马克思主义普遍原理同中国革命具体实践结合。八七会议是大革命失败到土地革命兴起的转折。从八七会议开始，中国共产党开始探索并最终走出了一条农村包围城市、武装夺取政权的中国革命新道路，领导人民取得了新民主主义革命的胜利。\n\n</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di63}}" class="whiteblock">
+            <view class="headline">抗日战争</view>
+            <view class="left_right_gap">
+                <text class="content">（1）抗日战争的胜利意义：中国人民抗日战争，是近代以来中华民族反抗外敌入侵第一次取得完全胜利的民族解放战争。彻底打败了日本侵略者，捍卫了中国的国家主权和领土完整，彻底洗刷了近代以来抗击外来侵略屡战屡败的民族耻辱。抗日战争的完全胜利开辟了中华民族伟大复兴的光明前景，促进了中华民族的大团结，形成了伟大的抗战精神。中国的抗战也为世界反法西斯战争作出了巨大贡献，为世界各国夺取反法西斯战争的胜利、维护世界和平的事业产生了巨大影响。\n\n（2）抗战胜利的原因：第一，以爱国主义为核心的民族精神是中国人民抗日战争胜利的决定性因素。第二，中国共产党的中流砥柱作用是中国人民抗日战争的关键。第三，全民族抗战是中国人民抗日战争胜利的重要法宝。第四，中国人民抗日战争的胜利，同世界所有爱好和平正义的国家和人民、国际组织以及各种反法西斯力量的同情和支持也是分不开的。\n\n</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di64}}" class="whiteblock">
+            <view class="headline">马克思主义中国化</view>
+            <view class="left_right_gap">
+                <text class="content">中国人民经过反复比较，选择了马克思主义。历史证明，只有马克思主义能够救中国，只有社会主义才能发展中国。只有将马克思主义中国化，才能真正将马克思主义普遍原理同中国实际相结合，实现中华民族伟大复兴的中国梦。</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di65}}" class="whiteblock">
+            <view class="headline">中华民族伟大复兴</view>
+            <view class="left_right_gap">
+                <text class="content">实现中华民族伟大复兴是近代以来中华民族最伟大的梦想。中国共产党一经诞生，就把为中国人民谋幸福，为中华民族谋复兴确立为自己的初心使命。一百年来，中国共产党团结带领中国人民进行的一切奋斗、一切牺牲、一切创造，归结起来就是一个主题：实现中华民族伟大复兴。\n\n</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di66}}" class="whiteblock">
+            <view class="headline">中国道路</view>
+            <view class="left_right_gap">
+                <text class="content">只有在每个时期都探索和坚持自己的路，即革命时期坚持农村包围城市、武装夺取政权的中国革命道路；建设时期坚持社会主义改造道路；改革开放新时期坚持中国特设社会主义道路，才能真正实现党为人民谋幸福的初心、为中华民族谋复兴的使命。\n\n</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di67}}" class="whiteblock">
+            <view class="headline">新征程（必须一字不落）</view>
+            <view class="left_right_gap">
+                <text class="content">在新征程上，我们必须坚持中国特色社会主义道路不动摇，继续推进马克思主义中国化时代化，坚持党的领导这一中国特设社会主义制度最大优势，统筹推进“五位一体”总体布局，协调推进“四个全面”战略布局，坚定“四个自信”，做到“两个维护”，不断满足人民过上美好生活的新期待，不断推进全体人民共同富裕。大力弘扬建档精神，站在实现全面建成小康社会的第一个百年目标基础上，为实现全面建成社会主义现代化强国的第二个百年奋斗目标，实现中华民族伟大复兴的中国梦不断奋斗。\n\n</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di68}}" class="whiteblock">
+            <view class="headline">毛泽东</view>
+            <view class="left_right_gap">
+                <text class="content">毛泽东是伟大的无产阶级革命家、战略家和理论家，伟大的马克思主义者。其一生中，功绩是第一位的，错误是第二位的。他将马克思主义普遍原理同中国革命实际相结合，创立了第一个理论成果即毛泽东思想。在毛泽东思想指导下，中国共产党带领中国人民完成了新民主主义革命，推翻了三座大山，建立了中华人民共和国；完成社会主义革命，确立了社会主义基本制度，为当代中国的一切发展奠定了政治前提和制度基础。\n\n</text>
+            </view>
+        </view>
+
+
+        <view hidden="{{di69}}" class="whiteblock">
+            <view class="headline">邓小平</view>
+            <view class="left_right_gap">
+                <text class="content">邓小平是改革开放和现代化建设的总设计师。以邓小平同志为主要代表的中国共产党人深刻总结新中国成立以来正反两方面经验，围绕什么是社会主义、怎么样建设社会主义这一根本问题，创立了邓小平理论，并在改革开放的实践中找到了中国特设社会主义道路，成功开创了中国特设社会主义。\n\n</text>
+            </view>
+        </view>
+        <view hidden="{{di70}}" class="whiteblock">
+            <view class="headline">人生价值</view>
+            <view class="left_right_gap">
+                <text class="content">（1）关系（为什么要奉献社会）：人生价值内在地包含了人生的自我价值和社会价值，它们相互区别又相互联系，共同构成了人生价值的矛盾统一体。一方面，人生的自我价值是个人生存发展的必要条件，也是为社会创造更大价值的前提，包含着满足社会需要的价值属性；另一方面，社会价值是社会存在和发展的重要条件，是实现个体自我完善发展的保障。没有社会价值，自我价值就无法存在。人的本质属性是社会性，决定了社会价值是人生价值更重要的一方面。\n\n</text>
+            </view>
+        </view>
+        <view hidden="{{di71}}" class="whiteblock">
+            <view class="headline">理想与现实</view>
+            <view class="left_right_gap">
+                <text class="content">（1）个人理想和社会理想。个人理想与社会理想的关系实质上是个人与社会的关系在理想层面的反映，它们相互联系、相互影响、相互制约。一方面，个人理想以社会理想为指引，个人理想的实现必须以社会理想的实现为前提和基础，因此社会理想是理想体系中最根本、最重要的，个人理想从属于社会理想，个人理想的实现依赖于社会理想的实现，社会理想规定、指引着个人理想。另一方面，社会理想是对个人理想的凝练和升华。社会理想建立在众多个人理想基础之上，社会理想的实现归根到底要靠社会成员的共同努力。因此，我们要将个人理想融入社会理想之中，在为社会理想奋斗的过程中实现个人理想。\n\n（2）理想信念。理想信念是人的精神世界的核心，是人类特有的精神现象，是人精神上的“钙”。没有理想信念，理想信念不坚定，就会“缺钙”，得“软骨病”。理想和信念总是相互依存。理想是信念所指的对象，信念则是理想实现得保障。理想信念是人生发展得内在动力，昭示人生的奋斗目标，提供人生的前进动力，是衡量精神境界高下的重要标尺。信仰、信念、信心，任何时候都至关重要。理想信念之火一经点燃就会产生巨大的精神力量。\n\n（3）理想与现实。关系：理想与现实是辩证统一的。一方面，二者的矛盾与冲突属于“应然”和“实然”的矛盾，不能将二者割裂开来。另一方面，二者是统一的，理想受现实的规定和制约，是在现实的基础上发展起来的。现实中包含着理想的因素，孕育着理想的发展；理想中也包含着现实，在一定条件下理想可以转化为未来的现实。\n\n措施：第一，我们绝不能用理想来否定现实，也不能用现实来否定理想，要辩证看待理想与现实的矛盾。第二，还要充分认识到理想实现的长期性、艰巨性和曲折性，正确看待和处理顺境与逆境。第三，要实现理想，必须树立坚定的信念，而勇于实践、艰苦奋斗是实现理想的根本途径。\n\n</text>
+            </view>
+        </view>
+        <view hidden="{{di72}}" class="whiteblock">
+            <view class="headline">爱国主义</view>
+            <view class="left_right_gap">
+                <text class="content">（1）意义与内涵：爱国主义是中华民族的民族心、民族魂，是中华民族最重要的精神财富，是中国人民和中华民族维护民族独立和民族尊严的强大精神动力。爱国主义既是一项道德要求，也是一种法律要求。爱国主义的基本要求是爱祖国的大好山河、爱自己的骨肉同胞、爱祖国的灿烂文化和爱自己的国家。爱国在当今仍有其时代价值，它是民族精神的核心，是维护祖国统一和民族团结的纽带，是实现中华民族伟大复兴的动力，也是实现人生价值的力量源泉。\n\n（2）新时代的爱国主义：坚持爱国主义，必须坚持爱国主义与社会主义相统一。在当代中国，爱国主义首先体现在对社会主义中国的热爱上。当代中国，爱国主义的本质就是坚持爱国和爱党、爱社会主义高度统一。必须维护祖国统一和民族团结，这是弘扬爱国主义精神的重要着力点和落脚点。必须尊重和传承中华民族历史和文化。必须坚持立足中国又面向世界。\n\n</text>
+            </view>
+        </view>
+        <view hidden="{{di73}}" class="whiteblock">
+            <view class="headline">社会主义核心价值观</view>
+            <view class="left_right_gap">
+                <text class="content">（1）意义与内涵：弘扬社会主义核心价值观是坚持和发展中国特设社会主义的价值遵循，是提高国家文化软实力的迫切要求，也是增进社会团结的最大公约数。社会主义核心价值观把涉及国家、社会、公民的价值要求融为一体，是对我们要建设什么样的国家、社会和公民等问题的深刻回答，是建设社会主义现代化强国、实现中华民族伟大复兴中国梦的价值引领。\n\n（2）显著特征（单独背）：社会主义核心价值观体现社会主义的本质属性，扎根中华优秀传统文化土壤，吸纳世界文明有益成果，具有超越以往一切社会核心价值观的先进性，是反映人类社会发展进步的价值理念。人民性是社会主义核心价值观的根本特性。社会主义核心价值观不仅真正地与社会主义制度相契合，与保障人民地根本利益相一致，而且因其真实可信具有强大的道义力量。\n\n（3）措施：做社会主义核心价值观地积极践行者。第一，要扣好人生的扣子，坚持和培养正确的价值观，将人生价值追求融入国家和民族事业，始终站在人民大众立场，奉献社会，为实现国家富强、民族振兴、人民幸福的中国梦凝聚强大的青春力量。第二，要把社会主义核心价值观落细落小落实。坚持勤学、修德、明辨、笃实，在激扬青春、开拓人生、奉献社会的进程中书写无愧于时代的壮丽篇章。\n\n</text>
+            </view>
+        </view>
+        <view hidden="{{di74}}" class="whiteblock">
+            <view class="headline">社会公德</view>
+            <view class="left_right_gap">
+                <text class="content">（1）意义：公共生活需要公共秩序。有序的公共生活是社会生产活动的重要基础，是提高社会成员生活质量的基本保障，更是社会文明的重要标志。社会公德是维护公共秩序、社会和谐稳定的起码道德要求，涵盖了人与人、人与社会、人与自然之间的关系、包括文明礼貌、助人为乐、爱护公物、保护环境与遵纪守法。\n\n（2）措施：我们必须在实践中不断增强自身的道德修养，加强自身道德建设，遵守社会公德，坚持社会主义核心价值观，不断推动社会主义道德建设的良好发展。</text>
+            </view>
+        </view>
+        <view hidden="{{di75}}" class="whiteblock">
+            <view class="headline">道德模范</view>
+            <view class="left_right_gap">
+                <text class="content">道德模范是自觉践行社会道德要求的典范，反映了社会发展进步的时代精神。榜样的力量是无穷的，他们用自己的行动诠释着道德的内涵，展示着道德的力量。学习道德模范的高尚品格和先进事迹，崇德向善、见贤思齐，弘扬真善美，传播正能量，提升全体社会成员的道德素质和社会整体道德水平。\n\n</text>
+            </view>
+        </view>
+        <view hidden="{{di76}}" class="whiteblock">
+            <view class="headline">权利义务关系</view>
+            <view class="left_right_gap">
+                <text class="content">法律权力与法律义务的关系密不可分，辩证统一。世界上没有无权利的义务，也没有无义务的权利。没有权利，义务的设定就失去了目的和根据；没有义务，权利的实现也就成为了空话。正确理解二者之间的关系，对于依法行使权利和履行义务具有十分重要的意义：第一，法律权利与法律义务不可分割，相互依存，法制社会中不存在没有权利根据的法律义务。第二，法律权利与法律义务一律平等，在法律面前人人平等。第三，法律权利与法律义务互利共赢。一个人无论是行使法律权利还是履行法律义务，都是对自己有利的。我们要依法正确行使权利和履行义务。\n\n</text>
+            </view>
+        </view>
+        <view hidden="{{di77}}" class="whiteblock">
+            <view class="headline">宪法至上</view>
+            <view class="left_right_gap">
+                <text class="content">（1）宪法至上的地位：我国宪法是国家的根本法，是治国安邦的总章程，是党和人民意志的集中体现。宪法在中国特设社会主义法律体系中居于统帅地位，规定了国家的根本制度，是国家各项制度和法律法规的总依据。我国宪法具有最高的法律地位、法律权威、法律效力，具有根本性、全局性、稳定性、长期性。一切法律、行政法规、地方性法规的制定都必须以宪法为依据，遵顼宪法的基本原则，不得与宪法相抵触。\n\n（2）宪法实施：宪法的生命在于实施，宪法的权威也在于实施。维护宪法权威，就是维护党和人民共同意志的权威；捍卫宪法尊严，就是捍卫党和人民共同意志的尊严；保证宪法实施，就是保证人民根本利益的实现。我们党首先要带头尊崇和执行宪法，把领导人民制定和实施宪法法律同党坚持在宪法法律范围内活动统一起来。一切违反宪法法律的行为，都必须予以追究。一切国家机关和武装力量、各政党和各社会团体、各企业事业组织，都必须以宪法为根本活动准则，并且负有维护宪法尊严、保证宪法实施的职责。任何组织或者个人都不得有超越宪法法律的特权。\n\n</text>
+            </view>
+        </view>
+        <view hidden="{{di78}}" class="whiteblock">
+            <view class="headline">德治与法治</view>
+            <view class="left_right_gap">
+                <text class="content">（1）关系：社会主义法律和社会主义道德在性质、作用和目标上的一致性，决定了建设中国特色社会主义法治国家，必须一手抓法治、一手抓德治，坚持依法治国和以德治国相结合。法治是治国理政的基本方式，具有根本性、决定性和统一性，德治是治国理政的重要方式。忽视其中的任何一个，都将难以实现国家的长治久安。只有让法治和德治共同发挥作用，才能使法律和道德相辅相成，法治和德治相得益彰，做到法安天下，德润人心。\n\n（2）措施：推动法治和德治的相互促进。一是强化道德对法治的支撑作用。二是道德要求贯彻到法治建设中，以法治承载道德理念和要求。三是运用法治手段解决道德领域突出问题。法律是底线的道德，也是道德的保障。\n\n</text>
+            </view>
+        </view>
+        <view hidden="{{di79}}" class="whiteblock">
+            <view class="headline">新时代青年的担当与责任</view>
+            <view class="left_right_gap">
+                <text class="content">（全文背诵）今天，我们比历史上任何时期都要更接近、更有信心和能力实现中华民族伟大复兴的目标。作为新时代的中国青年，就要树立正确的世界观、人生观、价值观，坚定中国特色社会主义共同理想，筑牢理想信念之基。厚植爱国主义情怀，弘扬民族精神和时代精神。学习和践行社会主义核心价值观，内化于心、外化于行。加强和提高思想道德修养和科学文化修养，全面提升个人素养和为人民服务的本领。积极投身中国特色社会主义伟大实践，用奋斗和奉献在实现中国梦的伟大实践中释放青春激情、追逐青春理想，以青春之我、奋斗之我，为民族复兴铺路架桥，为祖国建设添砖加瓦。\n\n</text>
+            </view>
+        </view>
+
+    </scroll-view>
+    <view style="background-color: rgb(241, 241, 241);position: fixed;bottom: 0;left: 0;width: 100%;">
+        <button hidden="{{xianshi}}" style="border-color: rgb(123, 123, 248);background-color:rgb(123, 123, 248) ;color: white;width: 100%;" bindtap="tishiyixia">提示一下</button>
+    </view>
+    <view style="background-color: rgb(241, 241, 241);position: fixed;bottom: 0;left: 0;width: 100%;">
+        <button hidden="{{!xianshi}}" style="border-color: rgb(123, 123, 248);background-color:rgb(123, 123, 248) ;color: white;width: 100%;" bindtap="tishiyixia">关闭提示</button>
+    </view>
+</view>

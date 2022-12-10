@@ -1,0 +1,119 @@
+<scroll-view class="scroll_view" scroll-y="true">
+    <view>
+        <view>
+            <view bindtap="miaoshutongji" class="zhutizi">描述统计</view>
+            <view style="background-color: rgb(250, 250, 250);height: 75rem;margin-left: 1rem;margin-top: 1rem;border-radius: 10px;" hidden="{{miaoshutongji}}">
+                <view class="flex_only" bindtap="di1ge">
+                    <view class="xuhao">1</view>
+                    <view class="xiaokuangkuang">基础</view>
+                </view>
+                <view class="yilianxi">已练习 0 次</view>
+            </view>
+        </view>
+    </view>
+    <view style="height: 2pt;"></view>
+    <view>
+        <view>
+            <view bindtap="tuiduantongji" class="zhutizi">推断统计</view>
+            <view class="kuangkuang" hidden="{{tuiduantongji}}">
+                <view class="flex_only" bindtap="di1ge">
+                    <view class="xuhao">1</view>
+                    <view class="xiaokuangkuang">单样本z检验</view>
+                </view>
+                <view class="yilianxi">已练习 0 次</view>
+                <view class="fengexian"></view>
+                <view class="flex_only" bindtap="di2ge">
+                    <view class="xuhao">2</view>
+                    <view class="xiaokuangkuang">区间估计与t分布</view>
+                </view>
+                <view class="yilianxi">已练习 0 次</view>
+                <view class="fengexian"></view>
+                <view class="flex_only" bindtap="di3ge">
+                    <view class="xuhao">3</view>
+                    <view class="xiaokuangkuang">两独立样本均数t检验</view>
+                </view>
+                <view class="yilianxi">已练习 0 次</view>
+                <view class="fengexian"></view>
+                <view class="flex_only" bindtap="di4ge">
+                    <view class="xuhao">4</view>
+                    <view class="xiaokuangkuang">线性相关</view>
+                </view>
+                <view class="yilianxi">已练习 0 次</view>
+                <view class="fengexian"></view>
+                <view class="flex_only" bindtap="di5ge">
+                    <view class="xuhao">5</view>
+                    <view class="xiaokuangkuang">线性回归</view>
+                </view>
+                <view class="yilianxi">已练习 0 次</view>
+                <view class="fengexian"></view>
+                <view class="flex_only" bindtap="di6ge">
+                    <view class="xuhao">6</view>
+                    <view class="xiaokuangkuang">配对t检验</view>
+                </view>
+                <view class="yilianxi">已练习 0 次</view>
+                <view class="fengexian"></view>
+                <view class="flex_only" bindtap="di7ge">
+                    <view class="xuhao">7</view>
+                    <view class="xiaokuangkuang">单因素方差分析</view>
+                </view>
+                <view class="yilianxi">已练习 0 次</view>
+                <view class="fengexian"></view>
+                <view class="flex_only" bindtap="di8ge">
+                    <view class="xuhao">8</view>
+                    <view class="xiaokuangkuang">多重比较</view>
+                </view>
+                <view class="yilianxi">已练习 0 次</view>
+                <view class="fengexian"></view>
+                <view class="flex_only" bindtap="di9ge">
+                    <view class="xuhao">9</view>
+                    <view class="xiaokuangkuang">两因素方差分析</view>
+                </view>
+                <view class="yilianxi">已练习 0 次</view>
+                <view class="fengexian"></view>
+                <view class="flex_only" bindtap="di10ge">
+                    <view class="xuhao">10</view>
+                    <view class="xiaokuangkuang">重复测量方差分析</view>
+                </view>
+                <view class="yilianxi">已练习 0 次</view>
+                <view class="fengexian"></view>
+                <view class="flex_only" bindtap="di11ge">
+                    <view class="xuhao">11</view>
+                    <view class="xiaokuangkuang">两因素混合设计方差分析</view>
+                </view>
+                <view class="yilianxi">已练习 0 次</view>
+                <view class="fengexian"></view>
+                <view class="flex_only" bindtap="di12ge">
+                    <view class="xuhao">12</view>
+                    <view class="xiaokuangkuang">多元线性回归</view>
+                </view>
+                <view class="yilianxi">已练习 0 次</view>
+                <view class="fengexian"></view>
+                <view class="flex_only" bindtap="di13ge">
+                    <view class="xuhao">13</view>
+                    <view class="xiaokuangkuang">用回归方法做方差分析</view>
+                </view>
+                <view class="yilianxi">已练习 0 次</view>
+                <view class="fengexian"></view>
+                <view class="flex_only" bindtap="di14ge">
+                    <view class="xuhao">14</view>
+                    <view class="xiaokuangkuang">卡方检验</view>
+                </view>
+                <view class="yilianxi">已练习 0 次</view>
+                <view class="fengexian"></view>
+                <view class="flex_only" bindtap="di15ge">
+                    <view class="xuhao">15</view>
+                    <view class="xiaokuangkuang">顺序数据的统计检验</view>
+                </view>
+                <view class="yilianxi">已练习 0 次</view>
+                <view class="fengexian"></view>
+                <view class="flex_only" bindtap="di16ge">
+                    <view class="xuhao">16</view>
+                    <view class="xiaokuangkuang">中介效应和调节效应</view>
+                </view>
+                <view class="yilianxi">已练习 0 次</view>
+                <view class="fengexian"></view>
+
+            </view>
+        </view>
+    </view>
+</scroll-view>

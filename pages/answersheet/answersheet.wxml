@@ -1,0 +1,85 @@
+<view class="beijing">
+    <view class="datizhi">
+        <view class="datikadeziti">答题卡</view>
+        <view class="flex_only">
+            <view class="xiao_zuoduile"></view>
+            <view class="daduidacuodeziti">答对</view>
+            <view class="xiao_zuocuole"></view>
+            <view class="daduidacuodeziti">答错</view>
+        </view>
+        <view class="huisehengxian"></view>
+        <view class="flex_only">
+            <view class="danxuantideziti">单选题</view>
+            <view class="danxuantihoumianshuzideziti">(10)</view>
+        </view>
+        <view class="flex_only">
+            <view hidden="{{!scoresheet[1]}}">
+                <view class="zuoduile">1</view>
+            </view>
+            <view hidden="{{scoresheet[1]}}">
+                <view class="zuocuole">1</view>
+            </view>
+            <view hidden="{{!scoresheet[2]}}">
+                <view class="zuoduile">2</view>
+            </view>
+            <view hidden="{{scoresheet[2]}}">
+                <view class="zuocuole">2</view>
+            </view>
+            <view hidden="{{!scoresheet[3]}}">
+                <view class="zuoduile">3</view>
+            </view>
+            <view hidden="{{scoresheet[3]}}">
+                <view class="zuocuole">3</view>
+            </view>
+            <view hidden="{{!scoresheet[4]}}">
+                <view class="zuoduile">4</view>
+            </view>
+            <view hidden="{{scoresheet[4]}}">
+                <view class="zuocuole">4</view>
+            </view>
+        </view>
+
+        <view class="flex_only">
+            <view hidden="{{!scoresheet[5]}}">
+                <view class="zuoduile">5</view>
+            </view>
+            <view hidden="{{scoresheet[5]}}">
+                <view class="zuocuole">5</view>
+            </view>
+            <view hidden="{{!scoresheet[6]}}">
+                <view class="zuoduile">6</view>
+            </view>
+            <view hidden="{{scoresheet[6]}}">
+                <view class="zuocuole">6</view>
+            </view>
+            <view hidden="{{!scoresheet[7]}}">
+                <view class="zuoduile">7</view>
+            </view>
+            <view hidden="{{scoresheet[7]}}">
+                <view class="zuocuole">7</view>
+            </view>
+            <view hidden="{{!scoresheet[8]}}">
+                <view class="zuoduile">8</view>
+            </view>
+            <view hidden="{{scoresheet[8]}}">
+                <view class="zuocuole">8</view>
+            </view>
+        </view>
+        <view class="flex_only">
+            <view hidden="{{!scoresheet[9]}}">
+                <view class="zuoduile">9</view>
+            </view>
+            <view hidden="{{scoresheet[9]}}">
+                <view class="zuocuole">9</view>
+            </view>
+            <view hidden="{{!scoresheet[10]}}">
+                <view class="zuoduile">10</view>
+            </view>
+            <view hidden="{{scoresheet[10]}}">
+                <view class="zuocuole">10</view>
+            </view>
+        </view>
+    </view>
+
+</view>
+<view style="height: 6rem;width: 40rem;"></view>

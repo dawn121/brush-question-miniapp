@@ -1,0 +1,34 @@
+.left_right_top_gap {
+    padding-top: 60rpx;
+    padding-left: 35rpx;
+    padding-right: 35rpx;
+    background-color: rgb(241, 241, 241);
+}
+
+.left_right_gap {
+    padding-left: 35rpx;
+    padding-right: 35rpx;
+}
+
+.whiteblock {
+    background-color: white;
+    border-radius: 20rpx;
+}
+
+.headline {
+    font-size: 20pt;
+    text-align: center;
+    padding-top: 10rpx;
+    padding-bottom: 10rpx;
+}
+
+.content {
+    font-size: 12pt;
+    text-align: justify;
+}
+
+.content::after {
+    width: 100%;
+    display: inline-block;
+    content: '';
+}

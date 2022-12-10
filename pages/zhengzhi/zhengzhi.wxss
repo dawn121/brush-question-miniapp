@@ -1,0 +1,63 @@
+/* pages/introductorytheory/introductorytheory.wxss */
+.scroll_view {
+    background-color: white;
+}
+
+.kuangkuang {
+    background-color: rgb(250, 250, 250);
+    height: 120rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+.xiaokuangkuang {
+    font-size: large;
+    margin-left: 1rem;
+    padding-top: 1rem;
+}
+
+.xuhao {
+    border-radius: 10px;
+    color: rgb(168, 168, 168);
+    background-color: rgb(216, 216, 216);
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-top: 1.2rem;
+    margin-left: 1rem;
+}
+
+.yilianxi {
+    font-size: small;
+    color: rgb(143, 143, 143);
+    margin-left: 4.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.fengexian {
+    width: 100%;
+    height: 1rpx;
+    background: #E0E3DA;
+}
+
+.flex_only {
+    display: flex;
+}
+
+
+
+.zhutizi {
+    background-color: rgb(123, 123, 248);
+    color: white;
+    font-size: x-large;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.lijishuati {
+    border-radius: 80rpx;
+    background-color: rgb(123, 123, 248);
+    color: white;
+    margin-top: 1rem;
+}
