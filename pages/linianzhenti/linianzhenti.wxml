@@ -1,0 +1,116 @@
+<scroll-view class="shouye" scroll-y="true">
+    <view class="flex_only" style="justify-content: center;">
+        <view class="kuangkuang">
+            <view class="dingbu">
+                <view class="shangyuanxing_1">
+                    <view class="shangyuanxing_2"></view>
+                </view>
+            </view>
+            <view class="shangyuanxing_3"></view>
+            <view class="flex_only" bindtap="zhenti2022">
+                <view class="nianfen">2022</view>
+                <view style="color: white;font-size: medium;margin-top: 2.3rem;margin-left: 0.2rem;">年</view>
+            </view>
+
+            <view class="flex_only">
+                <view style="color: rgb(228, 228, 228);font-size: small;margin-left: 2rem;margin-top: 2rem;">已练习</view>
+                <view style="font-size: large;color: rgb(228, 228, 228);margin-top: 1.7rem;margin-left: 0.2rem;">0</view>
+                <view style="color: rgb(228, 228, 228);font-size: small;margin-left: 0.2rem;margin-top: 2rem;">次</view>
+            </view>
+        </view>
+        <view class="kuangkuang">
+            <view class="dingbu">
+                <view class="shangyuanxing_1">
+                    <view class="shangyuanxing_2"></view>
+                </view>
+            </view>
+            <view class="shangyuanxing_3"></view>
+            <view class="flex_only" bindtap="zhenti2021">
+                <view class="nianfen">2021</view>
+                <view style="color: white;font-size: medium;margin-top: 2.3rem;margin-left: 0.2rem;">年</view>
+            </view>
+
+            <view class="flex_only">
+                <view style="color: rgb(228, 228, 228);font-size: small;margin-left: 2rem;margin-top: 2rem;">已练习</view>
+                <view style="font-size: large;color: rgb(228, 228, 228);margin-top: 1.7rem;margin-left: 0.2rem;">0</view>
+                <view style="color: rgb(228, 228, 228);font-size: small;margin-left: 0.2rem;margin-top: 2rem;">次</view>
+            </view>
+        </view>
+    </view>
+    <view class="flex_only" style="justify-content: center;">
+        <view class="kuangkuang">
+            <view class="dingbu">
+                <view class="shangyuanxing_1">
+                    <view class="shangyuanxing_2"></view>
+                </view>
+            </view>
+            <view class="shangyuanxing_3"></view>
+            <view class="flex_only" bindtap="zhenti2020">
+                <view class="nianfen">2020</view>
+                <view style="color: white;font-size: medium;margin-top: 2.3rem;margin-left: 0.2rem;">年</view>
+            </view>
+
+            <view class="flex_only">
+                <view style="color: rgb(228, 228, 228);font-size: small;margin-left: 2rem;margin-top: 2rem;">已练习</view>
+                <view style="font-size: large;color: rgb(228, 228, 228);margin-top: 1.7rem;margin-left: 0.2rem;">0</view>
+                <view style="color: rgb(228, 228, 228);font-size: small;margin-left: 0.2rem;margin-top: 2rem;">次</view>
+            </view>
+        </view>
+        <view class="kuangkuang">
+            <view class="dingbu">
+                <view class="shangyuanxing_1">
+                    <view class="shangyuanxing_2"></view>
+                </view>
+            </view>
+            <view class="shangyuanxing_3"></view>
+            <view class="flex_only" bindtap="zhenti2019">
+                <view class="nianfen">2019</view>
+                <view style="color: white;font-size: medium;margin-top: 2.3rem;margin-left: 0.2rem;">年</view>
+            </view>
+
+            <view class="flex_only">
+                <view style="color: rgb(228, 228, 228);font-size: small;margin-left: 2rem;margin-top: 2rem;">已练习</view>
+                <view style="font-size: large;color: rgb(228, 228, 228);margin-top: 1.7rem;margin-left: 0.2rem;">0</view>
+                <view style="color: rgb(228, 228, 228);font-size: small;margin-left: 0.2rem;margin-top: 2rem;">次</view>
+            </view>
+        </view>
+    </view>
+    <view class="flex_only" style="justify-content: center;">
+        <view class="kuangkuang">
+            <view class="dingbu">
+                <view class="shangyuanxing_1">
+                    <view class="shangyuanxing_2"></view>
+                </view>
+            </view>
+            <view class="shangyuanxing_3"></view>
+            <view class="flex_only" bindtap="zhenti2018">
+                <view class="nianfen">2018</view>
+                <view style="color: white;font-size: medium;margin-top: 2.3rem;margin-left: 0.2rem;">年</view>
+            </view>
+
+            <view class="flex_only">
+                <view style="color: rgb(228, 228, 228);font-size: small;margin-left: 2rem;margin-top: 2rem;">已练习</view>
+                <view style="font-size: large;color: rgb(228, 228, 228);margin-top: 1.7rem;margin-left: 0.2rem;">0</view>
+                <view style="color: rgb(228, 228, 228);font-size: small;margin-left: 0.2rem;margin-top: 2rem;">次</view>
+            </view>
+        </view>
+        <view class="kuangkuang">
+            <view class="dingbu">
+                <view class="shangyuanxing_1">
+                    <view class="shangyuanxing_2"></view>
+                </view>
+            </view>
+            <view class="shangyuanxing_3"></view>
+            <view class="flex_only" bindtap="zhenti2017">
+                <view class="nianfen">2017</view>
+                <view style="color: white;font-size: medium;margin-top: 2.3rem;margin-left: 0.2rem;">年</view>
+            </view>
+
+            <view class="flex_only">
+                <view style="color: rgb(228, 228, 228);font-size: small;margin-left: 2rem;margin-top: 2rem;">已练习</view>
+                <view style="font-size: large;color: rgb(228, 228, 228);margin-top: 1.7rem;margin-left: 0.2rem;">0</view>
+                <view style="color: rgb(228, 228, 228);font-size: small;margin-left: 0.2rem;margin-top: 2rem;">次</view>
+            </view>
+        </view>
+    </view>
+</scroll-view>

@@ -1,5 +1,5 @@
 <view class="beijing">
-    <view class="datizhi">
+    <scroll-view class="datizhi" scroll-y="true">
         <view class="datikadeziti">答题卡</view>
         <view class="flex_only">
             <view class="xiao_zuoduile"></view>
@@ -10,76 +10,38 @@
         <view class="huisehengxian"></view>
         <view class="flex_only">
             <view class="danxuantideziti">单选题</view>
-            <view class="danxuantihoumianshuzideziti">(10)</view>
-        </view>
-        <view class="flex_only">
-            <view hidden="{{!scoresheet[1]}}">
-                <view class="zuoduile">1</view>
-            </view>
-            <view hidden="{{scoresheet[1]}}">
-                <view class="zuocuole">1</view>
-            </view>
-            <view hidden="{{!scoresheet[2]}}">
-                <view class="zuoduile">2</view>
-            </view>
-            <view hidden="{{scoresheet[2]}}">
-                <view class="zuocuole">2</view>
-            </view>
-            <view hidden="{{!scoresheet[3]}}">
-                <view class="zuoduile">3</view>
-            </view>
-            <view hidden="{{scoresheet[3]}}">
-                <view class="zuocuole">3</view>
-            </view>
-            <view hidden="{{!scoresheet[4]}}">
-                <view class="zuoduile">4</view>
-            </view>
-            <view hidden="{{scoresheet[4]}}">
-                <view class="zuocuole">4</view>
-            </view>
-        </view>
+            <view class="danxuantihoumianshuzideziti">{{scoresheet.length}}</view>
 
-        <view class="flex_only">
-            <view hidden="{{!scoresheet[5]}}">
-                <view class="zuoduile">5</view>
-            </view>
-            <view hidden="{{scoresheet[5]}}">
-                <view class="zuocuole">5</view>
-            </view>
-            <view hidden="{{!scoresheet[6]}}">
-                <view class="zuoduile">6</view>
-            </view>
-            <view hidden="{{scoresheet[6]}}">
-                <view class="zuocuole">6</view>
-            </view>
-            <view hidden="{{!scoresheet[7]}}">
-                <view class="zuoduile">7</view>
-            </view>
-            <view hidden="{{scoresheet[7]}}">
-                <view class="zuocuole">7</view>
-            </view>
-            <view hidden="{{!scoresheet[8]}}">
-                <view class="zuoduile">8</view>
-            </view>
-            <view hidden="{{scoresheet[8]}}">
-                <view class="zuocuole">8</view>
+            <view class="flex_only">
+                <view wx:for="{{scoresheet}}">
+                    <view data-index="{{index+1}}" hidden="{{!scoresheet[index]}}">
+                        <view class="zuoduile">{{index+1}}</view>
+                    </view>
+                    <view data-index="{{index+1}}" hidden="{{scoresheet[index]}}">
+                        <view class="zuocuole">{{index+1}}</view>
+                    </view>
+                </view>
             </view>
         </view>
-        <view class="flex_only">
-            <view hidden="{{!scoresheet[9]}}">
-                <view class="zuoduile">9</view>
-            </view>
-            <view hidden="{{scoresheet[9]}}">
-                <view class="zuocuole">9</view>
-            </view>
-            <view hidden="{{!scoresheet[10]}}">
-                <view class="zuoduile">10</view>
-            </view>
-            <view hidden="{{scoresheet[10]}}">
-                <view class="zuocuole">10</view>
-            </view>
+        <view class="gap"></view>
+        <view class="gap"></view>
+        <view class="gap"></view>
+        <view class="gap"></view>
+    </scroll-view>
+    <view class="gap"></view>
+    <view class="gap"></view>
+    <view class="datizhi" hidden="{{linianzhenti}}">
+        <view class="datikadeziti">章节分析</view>
+        <view class="containers">
+            <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
         </view>
+        <view class="gap"></view>
+        <view class="gap"></view>
     </view>
-
+    <view class="gap"></view>
+    <view class="gap"></view>
 </view>
-<view style="height: 6rem;width: 40rem;"></view>
+
+<view hidden="{{buttonofnext}}" style="margin-top: 0.8rem;">
+    <button style="border-color: rgb(87, 87, 233);background-color:rgb(87, 87, 233) ;color: white;width: 60%;border-radius: 10rem;" bindtap="jixunuli">继续努力！</button>
+</view>

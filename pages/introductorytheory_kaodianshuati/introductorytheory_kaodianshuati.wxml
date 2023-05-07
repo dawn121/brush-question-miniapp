@@ -1,0 +1,152 @@
+<scroll-view class="scroll_view" scroll-y="true">
+    <view>
+        <view class="sanmenfenlei" bindtap="daolun">导论</view>
+        <view hidden="{{daolun}}">
+            <view class="kuangkuang">
+                <view class="flex_only">
+                    <view class="zhutizi">概述</view>
+                    <button class="lijishuati" bindtap="gaishu">立即刷题</button>
+                </view>
+            </view>
+            <view class="kuangkuang">
+                <view class="flex_only">
+                    <view class="zhutizi">生物</view>
+                    <button class="lijishuati" bindtap="biology">立即刷题</button>
+                </view>
+            </view>
+            <view class="kuangkuang">
+                <view class="flex_only">
+                    <view class="zhutizi">意识</view>
+                    <button bindtap="yishi" class="lijishuati">立即刷题</button>
+                </view>
+            </view>
+            <view class="kuangkuang">
+                <view class="flex_only">
+                    <view class="zhutizi">学习</view>
+                    <button bindtap="xuexi" class="lijishuati">立即刷题</button>
+                </view>
+            </view>
+            <view class="kuangkuang">
+                <view class="flex_only">
+                    <view class="zhutizi">记忆</view>
+                    <button bindtap="jiyi" class="lijishuati">立即刷题</button>
+                </view>
+            </view>
+            <view class="kuangkuang">
+                <view class="flex_only">
+                    <view class="zhutizi">语言</view>
+                    <button bindtap="yuyan" class="lijishuati">立即刷题</button>
+                </view>
+            </view>
+            <view class="kuangkuang">
+                <view class="flex_only">
+                    <view class="zhutizi">思维</view>
+                    <button bindtap="siwei" class="lijishuati">立即刷题</button>
+                </view>
+            </view>
+            <view class="kuangkuang">
+                <view class="flex_only">
+                    <view class="zhutizi">智力</view>
+                    <button bindtap="zhili" class="lijishuati">立即刷题</button>
+                </view>
+            </view>
+            <view class="kuangkuang">
+                <view class="flex_only">
+                    <view class="zhutizi">动机</view>
+                    <button bindtap="dongji" class="lijishuati">立即刷题</button>
+                </view>
+            </view>
+            <view class="kuangkuang">
+                <view class="flex_only">
+                    <view class="zhutizi">情绪</view>
+                    <button bindtap="qingxu" class="lijishuati">立即刷题</button>
+                </view>
+            </view>
+            <view class="kuangkuang">
+                <view class="flex_only">
+                    <view class="zhutizi">发展</view>
+                    <button bindtap="fazhan" class="lijishuati">立即刷题</button>
+                </view>
+            </view>
+            <view class="kuangkuang">
+                <view class="flex_only">
+                    <view class="zhutizi">人格</view>
+                    <button bindtap="renge" class="lijishuati">立即刷题</button>
+                </view>
+            </view>
+            <view class="kuangkuang">
+                <view class="flex_only">
+                    <view class="zhutizi">社会</view>
+                    <button bindtap="shehui" class="lijishuati">立即刷题</button>
+                </view>
+            </view>
+            <view class="kuangkuang">
+                <view class="flex_only">
+                    <view class="zhutizi">健康</view>
+                    <button bindtap="jiankang" class="lijishuati">立即刷题</button>
+                </view>
+            </view>
+            <view class="kuangkuang">
+                <view class="flex_only">
+                    <view class="zhutizi">障碍</view>
+                    <button bindtap="zhangai" class="lijishuati">立即刷题</button>
+                </view>
+            </view>
+            <view class="kuangkuang">
+                <view class="flex_only">
+                    <view class="zhutizi">治疗</view>
+                    <button bindtap="zhiliao" class="lijishuati">立即刷题</button>
+                </view>
+            </view>
+        </view>
+
+        <view class="sanmenfenlei" bindtap="shiyan" style="margin-top: 1rem;">实验</view>
+        <view hidden="{{shiyan}}">
+            <view class="kuangkuang">
+                <view class="flex_only">
+                    <view class="zhutizi">概述</view>
+                    <button class="lijishuati" bindtap="gaishu2">立即刷题</button>
+                </view>
+            </view>
+            <view class="kuangkuang">
+                <view class="flex_only">
+                    <view class="zhutizi">设计</view>
+                    <button class="lijishuati" bindtap="sheji">立即刷题</button>
+                </view>
+            </view>
+            <!-- <view class="kuangkuang">
+                <view class="flex_only">
+                    <view class="zhutizi">反应</view>
+                    <button class="lijishuati" bindtap="fanying">立即刷题</button>
+                </view>
+            </view> -->
+            <view class="kuangkuang">
+                <view class="flex_only">
+                    <view class="zhutizi">物理</view>
+                    <button class="lijishuati" bindtap="wuli">立即刷题</button>
+                </view>
+            </view>
+            <!-- <view class="kuangkuang">
+                <view class="flex_only">
+                    <view class="zhutizi">实验</view>
+                    <button class="lijishuati" bindtap="shiyan2">立即刷题</button>
+                </view>
+            </view> -->
+        </view>
+        <view class="sanmenfenlei" bindtap="tongji" style="margin-top: 1rem;">统计</view>
+        <view hidden="{{tongji}}">
+            <view class="kuangkuang">
+                <view class="flex_only">
+                    <view class="zhutizi">描述</view>
+                    <button class="lijishuati" bindtap="miaoshu">立即刷题</button>
+                </view>
+            </view>
+            <view class="kuangkuang">
+                <view class="flex_only">
+                    <view class="zhutizi">推断</view>
+                    <button class="lijishuati" bindtap="tuiduan">立即刷题</button>
+                </view>
+            </view>
+        </view>
+    </view>
+</scroll-view>

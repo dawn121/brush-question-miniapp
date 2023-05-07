@@ -1,9 +1,0 @@
-{
-    "usingComponents": {},
-    "navigationBarTitleText": "实验",
-    "window": {
-        "backgroundColor": "",
-        "backgroundTextStyle": "light",
-        "enablePullDownRefresh": "false"
-    }
-}

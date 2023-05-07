@@ -1,4 +1,8 @@
 {
-    "usingComponents": {},
-    "navigationBarTitleText": "我的"  
+    "usingComponents": {
+        "mp-half-screen-dialog": "weui-miniprogram/half-screen-dialog/half-screen-dialog",
+        "mp-searchbar": "weui-miniprogram/searchbar/searchbar"
+    },
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
 }

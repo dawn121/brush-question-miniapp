@@ -1,98 +1,75 @@
-<scroll-view class="scroll_view" scroll-y="true">
-    <view class="kuangkuang">
+<scroll-view class="shouye" scroll-y="true">
+    <view class="beijingyanse">
+        <view style="font-size: large;color: white;padding-top: 3.7rem;margin-left: 1.5rem;font-weight: bold;">347考研刷题</view>
         <view class="flex_only">
-            <view class="zhutizi">概述</view>
-            <button class="lijishuati">立即背诵</button>
+            <image bindtap="my" class="touxiang" src="../../lib/img/touxiang.png"></image>
+            <view style="margin-left: 1rem;margin-top: 1rem;">
+                <text style="font-size: xx-large;color: white;">.。.
+                </text>
+                <text style="font-size: small;color: white;">1人正在刷题</text>
+            </view>
         </view>
     </view>
-    <view class="kuangkuang">
+    <view class="shouye_dingkuang">
+        <view class="daojishi">
+            <view class="kaoyan">2024考研</view>
+            <view class="yingyongxinli">347应用心理</view>
+        </view>
         <view class="flex_only">
-            <view class="zhutizi">生物</view>
-            <button class="lijishuati" bindtap="biology">立即背诵</button>
+            <view style="width:40%;" class="abc">
+                <view class="jianchitianshu">坚持天数</view>
+                <view class="flex_only">
+                    <view class="tianshu">58</view>
+                    <view class="tian">天</view>
+                </view>
+                <view class="flex_only">
+                    <view class="paiming">排名：</view>
+                    <view style="margin-top: 0.3rem;">1</view>
+                </view>
+            </view>
+            <view class="shufengexian"></view>
+            <view class="zhongshandaxue" style="display: flex;justify-content: center;align-items: center;">
+                <picker bindchange="bindPickerChange" value="{{index_school}}" range="{{school}}">
+                    <view >{{school[index_school]}}</view>
+                </picker>
+            </view>
         </view>
     </view>
-    <view class="kuangkuang">
+
+    <view style="background-color: white;margin-left: 1.5rem;margin-right: 1.5rem;margin-top: 1rem;padding-bottom: 1rem;border-radius: 1rem;">
         <view class="flex_only">
-            <view class="zhutizi">意识</view>
-            <button bindtap="yishi" class="lijishuati">立即背诵</button>
+            <view class="shouye_zhongkuang_da" bindtap="kaodianshuati">
+                <view style="color: white;font-size: x-large;font-weight: bold;margin-left: 1rem;margin-top: 1rem;">考点刷题</view>
+                <view style="color: white;font-size: 25rpx;font-weight: normal;margin-left: 1rem;margin-top: 0.3rem;">共为16个章节</view>
+                <view style="color: white;font-size: 25rpx;font-weight: normal;margin-left: 1rem;margin-top: 0.1rem;">请务必熟记于心</view>
+            </view>
+            <view>
+                <view class="shouye_zhongkuang_xiao1" bindtap="linianzhenti">
+                    <view style="color: white;font-size: large;font-weight: bold;margin-left: 1rem;padding-top: 0.5rem;">历年真题</view>
+                    <view style="color: white;font-size: small;font-weight: normal;margin-left: 1rem;padding-top: 0.3rem;">2017-2022真题</view>
+                </view>
+                <view class="shouye_zhongkuang_xiao2" bindtap="jiyika">
+                    <view style="color: white;font-size: large;font-weight: bold;margin-left: 1rem;padding-top: 0.5rem;">记忆卡</view>
+                    <view style="color: white;font-size: small;font-weight: normal;margin-left: 1rem;padding-top: 0.3rem;">知识点背诵</view>
+                </view>
+            </view>
         </view>
     </view>
-    <view class="kuangkuang">
+
+    <view style="background-color: white;margin-left: 1.5rem;margin-right: 1.5rem;margin-top: 1rem;border-radius: 1rem;">
         <view class="flex_only">
-            <view class="zhutizi">学习</view>
-            <button bindtap="xuexi" class="lijishuati">立即背诵</button>
+            <view style="margin-left: 5rem;width: 0.1rem;height: 1rem;background-color: rgb(255, 255, 255);">
+            </view>
+            <view style="margin-left: 12rem;margin-right: 5rem;width: 0.1rem;height: 1rem;background-color: rgb(255, 255, 255);">
+            </view>
         </view>
-    </view>
-    <view class="kuangkuang">
-        <view class="flex_only">
-            <view class="zhutizi">记忆</view>
-            <button bindtap="jiyi" class="lijishuati">立即背诵</button>
+        <view class="mingcijieshi" bindtap="mingcijieshi">
+            <view style="font-size: x-large;color: white;font-weight: bold;margin-left: 1.5rem;padding-top: 0.5rem;">名词解释
+            </view>
+            <view style="margin-left: 1.5rem;font-size: medium;color: white;">报考院校的专硕试卷名词解释真题</view>
         </view>
-    </view>
-    <view class="kuangkuang">
-        <view class="flex_only">
-            <view class="zhutizi">语言</view>
-            <button bindtap="yuyan" class="lijishuati">立即背诵</button>
-        </view>
-    </view>
-    <view class="kuangkuang">
-        <view class="flex_only">
-            <view class="zhutizi">思维</view>
-            <button bindtap="siwei" class="lijishuati">立即背诵</button>
-        </view>
-    </view>
-    <view class="kuangkuang">
-        <view class="flex_only">
-            <view class="zhutizi">智力</view>
-            <button bindtap="zhili" class="lijishuati">立即背诵</button>
-        </view>
-    </view>
-    <view class="kuangkuang">
-        <view class="flex_only">
-            <view class="zhutizi">动机</view>
-            <button bindtap="dongji" class="lijishuati">立即背诵</button>
-        </view>
-    </view>
-    <view class="kuangkuang">
-        <view class="flex_only">
-            <view class="zhutizi">情绪</view>
-            <button bindtap="qingxu" class="lijishuati">立即背诵</button>
-        </view>
-    </view>
-    <view class="kuangkuang">
-        <view class="flex_only">
-            <view class="zhutizi">发展</view>
-            <button bindtap="fazhan" class="lijishuati">立即背诵</button>
-        </view>
-    </view>
-    <view class="kuangkuang">
-        <view class="flex_only">
-            <view class="zhutizi">人格</view>
-            <button bindtap="renge" class="lijishuati">立即背诵</button>
-        </view>
-    </view>
-    <view class="kuangkuang">
-        <view class="flex_only">
-            <view class="zhutizi">社会</view>
-            <button bindtap="shehui" class="lijishuati">立即背诵</button>
-        </view>
-    </view>
-    <view class="kuangkuang">
-        <view class="flex_only">
-            <view class="zhutizi">健康</view>
-            <button bindtap="jiankang" class="lijishuati">立即背诵</button>
-        </view>
-    </view>
-    <view class="kuangkuang">
-        <view class="flex_only">
-            <view class="zhutizi">障碍</view>
-            <button bindtap="zhangai" class="lijishuati">立即背诵</button>
-        </view>
-    </view>
-    <view class="kuangkuang">
-        <view class="flex_only">
-            <view class="zhutizi">治疗</view>
-            <button bindtap="zhiliao" class="lijishuati">立即背诵</button>
+        <view class="daojishi2">
+
         </view>
     </view>
 </scroll-view>

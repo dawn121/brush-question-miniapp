@@ -1,3 +1,0 @@
-<view wx:for="{{list}}">
-    <view bindtap="godemo2" data-id="{{item._id}}">商品名：{{item.name}}, 价格：{{item.price}}</view>
-</view>

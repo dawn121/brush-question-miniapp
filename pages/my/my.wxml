@@ -1,2 +1,56 @@
-<!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<scroll-view>
+    <view style="height: 18rem;background: -webkit-linear-gradient(top,rgb(65, 65, 231),rgb(96, 96, 228),rgb(110, 110, 255));">
+        <view style="color: white;font-weight: bold;font-size: larger;position: relative;top: 3rem;left: 11rem;">个人中心</view>
+        <view class="flex_only">
+            <image class="touxiang" src="../../lib/img/touxiang.png"></image>
+            <view style="margin-left: 1rem;margin-top: 1rem;">
+                <view wx:if="{{!isup}}">
+                    <button style="position: relative;top: 4.5rem;background-color: rgb(245, 245, 245);width: 5rem;height: 2.5rem;color:rgb(110, 110, 255)" type="primary" bindtap="openPopup" data-index="1">登录</button>
+                </view>
+                <view wx:if="{{isup}}">
+                    <text style="font-size: xx-large;color: white;position: relative;top: 2.5rem;">.。.
+                    </text>
+                    <text style="font-size: small;color: rgb(230, 230, 230);position: relative;top: 2.5rem;">总有人要累的，那为什么一定就是我呢？</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view style="background-color: rgb(245, 245, 245);height: 34rem;">
+        <view style="background-color: white;margin-left: 2rem;margin-right: 2rem;height: 30rem;position: relative;bottom: 3rem;border-radius: 1rem;box-shadow: 5rpx 5rpx 5rpx 5rpx white;">
+            <view class="flex_only" bindtap="yuanxiaoxiangqing">
+                <text style="font-size: 40rpx;font-weight: bold;color: black;position: relative;top: 1.8rem;left: 3rem;">· 院校详情
+                </text>
+                <text style="font-size: 40rpx;font-weight: bold;color: black;position: relative;top: 1.8rem;left: 12rem;">＞
+                </text>
+            </view>
+            <view style="height: 0.04rem;width:18rem;background-color: rgb(185, 184, 184);margin-left: 2rem;margin-top: 3rem;"></view>
+            <!-- <view class="flex_only">
+                <text style="font-size: 40rpx;font-weight: bold;color: black;position: relative;top: 1.8rem;left: 3rem;">· 收藏记录
+                </text>
+                <text style="font-size: 40rpx;font-weight: bold;color: black;position: relative;top: 1.8rem;left: 12rem;">＞
+                </text>
+            </view> -->
+            <!-- <view style="height: 0.03rem;width:18rem;background-color: rgb(185, 184, 184);margin-left: 2rem;margin-top: 3rem;"></view>
+            <view class="flex_only">
+                <text style="font-size: 40rpx;font-weight: bold;color: black;position: relative;top: 1.8rem;left: 3rem;">· 收货地址
+                </text>
+                <text style="font-size: 40rpx;font-weight: bold;color: black;position: relative;top: 1.8rem;left: 12rem;">＞
+                </text>
+            </view> -->
+            <!-- <view style="height: 0.04rem;width:18rem;background-color: rgb(185, 184, 184);margin-left: 2rem;margin-top: 3rem;"></view> -->
+        </view>
+         
+    </view> 
+    <view class="popup-box" wx:if="{{showIndex=='1'}}" bindtap="closePopup"></view>
+    <view class="info-center" style="height:{{height*0.4}}px;" wx:if="{{showIndex=='1'}}">
+        <view class="row-info-box">
+            <view class="row-info">
+              手机号码:<input style="background: white;width: 40vh;height: 2.5rem;" placeholder="请输入手机号码" type="number"/>
+            </view>
+            <view class="row-btn">
+                <view class="left-btn" bindtap="closePopup">取消</view>
+                <view class="right-btn" bindtap="submit">确认</view>
+            </view>
+        </view>
+    </view>
+</scroll-view>

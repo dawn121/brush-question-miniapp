@@ -1,0 +1,67 @@
+.flex_only {
+    display: flex;
+}
+
+.shouye {
+    background-color: rgb(251, 251, 251);
+    height: 100vh;
+    padding-bottom: 20px;
+}
+
+.kuangkuang {
+    height: 15rem;
+    width: 10rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: rgb(87, 87, 233);
+    border-radius: 20rpx;
+}
+
+.dingbu {
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+    width: 10rem;
+    border-top-left-radius: 20rpx;
+    border-top-right-radius: 20rpx;
+    border-bottom-left-radius: 40rpx;
+    border-bottom-right-radius: 40rpx;
+    background-color: rgb(146, 146, 247);
+    text-shadow: 5rpx 5rpx 5rpx rgb(77, 77, 77);
+}
+
+.shangyuanxing_1{
+    display: flex;
+    justify-content: center;
+    background: rgb(224, 224, 50);
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 100rem;
+    margin-top: 1rem;
+}
+
+.shangyuanxing_2{
+    background: rgb(87, 87, 233);
+    height: 0.7rem;
+    width: 0.7rem;
+    border-radius: 100rem;
+    margin-top: 0.45rem;
+}
+
+.shangyuanxing_3{
+    background: rgb(224, 224, 50);
+    height: 1rem;
+    width: 1rem;
+    border-radius: 100rem;
+    margin-top: 0.45rem;
+    margin-left: 4.5rem;
+}
+
+.nianfen {
+    font-size: xx-large;
+    color: white;
+    font-weight: bolder;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}

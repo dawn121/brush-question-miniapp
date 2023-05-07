@@ -1,0 +1,93 @@
+<scroll-view class="scroll_view" scroll-y="true">
+    <view class="kuangkuang">
+        <view class="flex_only">
+            <view class="zhutizi">概述</view>
+            <button class="lijishuati">立即背诵</button>
+        </view>
+    </view>
+
+    <view class="kuangkuang">
+        <view class="flex_only">
+            <view class="zhutizi">意识</view>
+            <button bindtap="yishi" class="lijishuati">立即背诵</button>
+        </view>
+    </view>
+    <view class="kuangkuang">
+        <view class="flex_only">
+            <view class="zhutizi">学习</view>
+            <button bindtap="xuexi" class="lijishuati">立即背诵</button>
+        </view>
+    </view>
+    <view class="kuangkuang">
+        <view class="flex_only">
+            <view class="zhutizi">记忆</view>
+            <button bindtap="jiyi" class="lijishuati">立即背诵</button>
+        </view>
+    </view>
+    <view class="kuangkuang">
+        <view class="flex_only">
+            <view class="zhutizi">语言</view>
+            <button bindtap="yuyan" class="lijishuati">立即背诵</button>
+        </view>
+    </view>
+    <view class="kuangkuang">
+        <view class="flex_only">
+            <view class="zhutizi">思维</view>
+            <button bindtap="siwei" class="lijishuati">立即背诵</button>
+        </view>
+    </view>
+    <view class="kuangkuang">
+        <view class="flex_only">
+            <view class="zhutizi">智力</view>
+            <button bindtap="zhili" class="lijishuati">立即背诵</button>
+        </view>
+    </view>
+    <view class="kuangkuang">
+        <view class="flex_only">
+            <view class="zhutizi">动机</view>
+            <button bindtap="dongji" class="lijishuati">立即背诵</button>
+        </view>
+    </view>
+    <view class="kuangkuang">
+        <view class="flex_only">
+            <view class="zhutizi">情绪</view>
+            <button bindtap="qingxu" class="lijishuati">立即背诵</button>
+        </view>
+    </view>
+    <view class="kuangkuang">
+        <view class="flex_only">
+            <view class="zhutizi">发展</view>
+            <button bindtap="fazhan" class="lijishuati">立即背诵</button>
+        </view>
+    </view>
+    <view class="kuangkuang">
+        <view class="flex_only">
+            <view class="zhutizi">人格</view>
+            <button bindtap="renge" class="lijishuati">立即背诵</button>
+        </view>
+    </view>
+    <view class="kuangkuang">
+        <view class="flex_only">
+            <view class="zhutizi">社会</view>
+            <button bindtap="shehui" class="lijishuati">立即背诵</button>
+        </view>
+    </view>
+    <view class="kuangkuang">
+        <view class="flex_only">
+            <view class="zhutizi">健康</view>
+            <button bindtap="jiankang" class="lijishuati">立即背诵</button>
+        </view>
+    </view>
+    <view class="kuangkuang">
+        <view class="flex_only">
+            <view class="zhutizi">障碍</view>
+            <button bindtap="zhangai" class="lijishuati">立即背诵</button>
+        </view>
+    </view>
+    <view class="kuangkuang">
+        <view class="flex_only">
+            <view class="zhutizi">治疗</view>
+            <button bindtap="zhiliao" class="lijishuati">立即背诵</button>
+        </view>
+    </view>
+</scroll-view>

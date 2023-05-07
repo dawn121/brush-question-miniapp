@@ -1,0 +1,30 @@
+<view style="background-color: rgb(87, 87, 233);padding-top: 7vh;padding-bottom: 10vh;" catchtouchmove="true">
+    <view style="background-color: white;height: 19vh;margin-left: 2rem;margin-right: 2rem;border-top-left-radius: 2rem; display: flex;flex-direction: column;" bindtap="xiayiti">
+        <view style="display: flex;align-items: center;">
+            <view style="height: 4vh;width: 7vh;background-color: rgb(240, 200, 140);color: white;font-weight: bold;padding-left: 0.5rem;padding-right: 0.5rem;margin-top: 0.7rem;margin-left: 2rem;display: flex;justify-content: center;align-items: center;">{{list[index].Type}}
+            </view>
+            <view style="height: 4vh;width: 13vh;background-color: rgb(233, 212, 181);color: white;font-weight: bold;padding-left: 0.5rem;padding-right: 0.5rem;margin-top: 0.7rem;margin-left: 2vh;display: flex;justify-content: center;align-items: center;">{{list[index].School}}</view>
+        </view>
+        <view style="margin-left: 2rem;padding-top: 1vh;font-weight: bold;font-size: x-large;">{{list[index].Title}}</view>
+        <view style="display: flex;flex-direction: row-reverse;position: absolute;">
+            <view style="height: 4vh;width: 17vh;background-color: rgb(133, 189, 142);color: white;font-weight: bold;padding-left: 0.5rem;padding-right: 0.5rem;;display: flex;justify-content: center;align-items: center;position: -webkit-sticky;position: relative;top: 14.5vh;left: 45vw;">单击下一题
+            </view>
+        </view>
+    </view>
+    <view style="background-color: white;height: 60vh;margin-left: 2rem;margin-right: 2rem;border-bottom-left-radius: 2rem;margin-top: 4vh;" bindtap="jiesuodaan">
+        <view>
+            <view style="display: flex;flex-direction: row-reverse;position: absolute;">
+                <view style="height: 4vh;width: 20vh;background-color: rgb(138, 233, 153);color: white;font-weight: bold;padding-left: 0.5rem;padding-right: 0.5rem;margin-top: 0.3rem;display: flex;justify-content: center;position: relative;left: 39vw;">单击解锁答案
+                </view>
+            </view>
+            <view hidden="{{jiexi}}">
+                <view style="margin-left: 2rem;font-size: large;margin-top: 0.5rem;">{{list[index].Title}}:</view>
+                <view style="margin-left: 2rem;margin-right: 1rem;padding-top: 1rem;">
+                    <scroll-view scroll-y="true">
+                        {{list[index].Answer}}
+                    </scroll-view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

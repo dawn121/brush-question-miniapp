@@ -5,10 +5,6 @@ Page({
      */
     data: {
         leibie: "",
-        beikaodian: true,
-        index_school: 0,
-        school: ['中山大学','广外','广中医','中科院'],
-        touxiangurl: "/../lib/img/touxiang.jfif"
     },
 
     /**
@@ -16,75 +12,6 @@ Page({
      */
     onLoad(options) {
 
-    },
-
-    mingcijieshi(events) {
-        wx.navigateTo({
-            url: '/pages/mingcijieshi/mingcijieshi',
-            events: events,
-            success: (result) => {},
-            fail: (res) => {},
-            complete: (res) => {},
-        })
-    },
-
-    my(events) {
-        wx.navigateTo({
-            url: '/pages/my/my',
-            events: events,
-            success: (result) => {},
-            fail: (res) => {},
-            complete: (res) => {},
-        })
-    },
-
-    bindPickerChange(events) {
-        this.setData({
-            index_school: events.detail.value
-          })
-    },
-
-    kaodianshuati(events) {
-        wx.navigateTo({
-            url: '/pages/introductorytheory_kaodianshuati/introductorytheory_kaodianshuati',
-            events: events,
-            success: (result) => {},
-            fail: (res) => {},
-            complete: (res) => {},
-        })
-    },
-
-    jiyika(events) {
-        wx.navigateTo({
-            url: '/pages/introductorytheory_jiyika/introductorytheory_jiyika',
-            events: events,
-            success: (result) => {},
-            fail: (res) => {},
-            complete: (res) => {},
-        })
-    },
-
-    biology(events) {
-        this.setData({
-            leibie: "biology"
-        })
-        wx.navigateTo({
-            url: '/pages/xuanzeti/xuanzeti?leibie=' + this.data.leibie,
-            events: events,
-            success: (result) => {},
-            fail: (res) => {},
-            complete: (res) => {},
-        })
-    },
-
-    linianzhenti(events) {
-        wx.navigateTo({
-            url: '/pages/linianzhenti/linianzhenti',
-            events: events,
-            success: (result) => {},
-            fail: (res) => {},
-            complete: (res) => {},
-        })
     },
 
     yishi(events) {

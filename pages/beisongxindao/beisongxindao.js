@@ -20,29 +20,17 @@ Page({
         shehui:true,
         jiankang:true,
         zhangai:true,
-        zhiliao:true,
-        di15:true,
-        di16:true,
-        di17:true,
-        di18:true,
-        di19:true,
-        di20:true,
-        di21:true,
-        di22:true,
-        di23:true,
-        di24:true,
+        zhiliao:true
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-        console.log("options:",options)
         let dijige = options.dijige
         this.setData({
             dijige:dijige
         })
-        console.log("dijige:",this.data.dijige)
         if(this.data.dijige=="yishi"){
             this.setData({
                 yishi:false
@@ -140,7 +128,6 @@ Page({
                 di24:false
             })
         }
-        console.log("di1:",this.data.di1)
     },
 
     
@@ -195,11 +182,8 @@ Page({
 
     tishiyixia() {
         var flagxianshi = this.data.xianshi+1
-
         this.setData({
             xianshi: flagxianshi%2
         })
-        console.log("flagxianshi:",flagxianshi)
-        console.log("xianshi:",this.data.xianshi)
     }
 })

@@ -1,0 +1,17 @@
+.shengfen {
+    width: 50%;
+    font-size: larger;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.yuanxiaofenlei {
+    width: 50%;
+    font-size: larger;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    display: flex; 
+}

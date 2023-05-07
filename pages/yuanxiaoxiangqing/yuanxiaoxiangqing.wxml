@@ -1,0 +1,32 @@
+<view>
+    <view style="background: -webkit-linear-gradient(top,rgb(65, 65, 231),rgb(96, 96, 228),rgb(110, 110, 255));height: 10rem;">
+        <view style="color: white;font-size: x-large;font-weight: bold;padding-top: 7rem;padding-left: 2rem;">院校详情</view>
+    </view>
+    <view>
+        <view style="display: flex;">
+            <view class="shengfen">
+                <picker bindchange="bindPickerChange1" value="{{index_shengfen}}" range="{{shengfen}}">
+                    <view style="padding-top: 0.5rem;">{{shengfen[index_shengfen]}}</view>
+                </picker>
+                <image style="width: 30rpx;height: 30rpx;margin-top: 1rem;margin-left: 0.3rem;" src="/../lib/img/xiala.png"></image>
+            </view>
+            <view class="yuanxiaofenlei">
+                <picker bindchange="bindPickerChange2" value="{{index_fenlei}}" range="{{fenlei}}">
+                    <view style="padding-top: 0.5rem;">{{fenlei[index_fenlei]}}</view>
+                </picker>
+                <image style="width: 30rpx;height: 30rpx;margin-top: 1rem;margin-left: 0.3rem;" src="/../lib/img/xiala.png"></image>
+            </view>
+        </view>
+        <view style="height: 0.01rem;width:100%;background-color: rgb(185, 184, 184);margin-top: 0.5rem;"></view>
+        <view bindtap="yuanxiaoxiangqingxijie" style="padding-top: 0.5rem;display: flex;">
+            <view style="width: 60%;height:200rpx;padding-top: 1.5rem;padding-left: 1rem;">中山大学：广东省著名985院校,实力很强，参考书目仅三本
+                <view style="display: flex;">
+                    <view style="padding-top: 2.3rem;color: gainsboro;font-size: small;">138浏览</view>
+                    <view style="padding-top: 2.3rem;padding-left: 5rem;color: gainsboro;font-size: small;">2023-3-1 13:24</view>
+                </view>
+            </view>
+            <image style="height:135px;width: 135px;" src="/../lib/img/zhongda.jpeg"></image>
+        </view>
+        <view style="height: 0.01rem;width:100%;background-color: rgb(185, 184, 184);margin-top: 0.5rem;"></view>
+    </view>
+</view>
